@@ -44,9 +44,9 @@ Create directory for build source code and go to this directory.
 
 For building code need we can set next params:
 
-**-DBUILD_IPOE_DRIVER=TRUE**
-Include IPoE module. This module need if you want use accel-ppp as shared interface.
-**-DBUILD_VLAN_MON_DRIVER=TRUE**
+ **-DBUILD_IPOE_DRIVER=TRUE**
+ Include IPoE module. This module need if you want use accel-ppp as shared interface.
+ **-DBUILD_VLAN_MON_DRIVER=TRUE**
 Include vlan monitoring module. If you want create vlan automatically on analyse IP headers with regular expression set on accel-ppp config file. (Available for IPoE and PPPoE)
 **-DKDIR=/usr/src/linux-headers-`uname -r`**
 Sets path to Linux kernel source code. Need only for build IPOE, VLAN-MON.
