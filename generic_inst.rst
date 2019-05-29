@@ -52,3 +52,17 @@ but while pptp is not present in mainline kernel you probably need BUILD_DRIVER.
 Run
 ^^^
 
+.. code-block:: sh
+
+  accel-pppd -d -p /var/run/accel-ppp.pid -c /etc/accel-ppp.conf
+
+.. code-block:: sh
+
+  usage: accel-pppd [-d] [-p <file>] -c <file>
+  	where:
+  		-d - daemon mode
+  		-p - write pid to <file>
+  		-c - config file
+
+Control
+^^^^^^^
