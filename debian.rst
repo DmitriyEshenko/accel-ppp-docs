@@ -43,7 +43,7 @@ For building code need we can set next params:
 
 .. admonition:: Notice:
 
-  ended symbols **..** sets path to accel-ppp source code, not delete this! Or you can replace it full path to accel-ppp-code like /opt/accel-ppp-code/
+   ended symbols **..** sets path to accel-ppp source code, not delete this! Or you can replace it full path to accel-ppp-code like /opt/accel-ppp-code/
 
 Compile:
 
