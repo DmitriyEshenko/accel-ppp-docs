@@ -3,7 +3,7 @@ core
 
 Section [core] consist main daemon params.
 
-* **log-error=path* ** - path to file for core module error logging.
+* **log-error=path** - path to file for core module error logging.
 * **thread-count=n** - number of working threads, optimal - number of processors/cores
 
 .. admonition:: Note:
