@@ -15,6 +15,7 @@ Configuration file consists of sections in form:
        [section2]
                ....
 
+
 .. toctree::
     :maxdepth: 2
     :caption: Contents:
