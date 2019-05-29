@@ -69,7 +69,7 @@ If you have success packet install, rename config file to accel-ppp.conf
   
 Edit accel-ppp.conf for you schemas and run accel-ppp
 
-**Run as systemd unit**
+**Run as systemd unit:**
 
 .. code-block:: sh
 
