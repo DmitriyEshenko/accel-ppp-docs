@@ -66,3 +66,9 @@ Run
 
 Control
 ^^^^^^^
+Accel-ppp support next features for control daemon and sessions
+
+* **accel-cmd**
+* **telnet**
+* **radius CoA**
+* **snmp**
