@@ -1,0 +1,42 @@
+Generic Installation
+-----------------
+
+Requirment
+^^^^^^^^^^
+  1. modern linux distribution
+  2. kernel-2.6.25 or later
+  4. cmake-2.6 or later
+  5. libnl-2.0 or probably later (optional, required for builtin shaper)
+  6. libcrypto-0.9.8 or probably later (openssl-0.9.8)
+  7. libpcre
+  8. net-snmp-5.x (optional, required for snmp)
+  9. libssl-0.9.8 or probably later (openssl-0.9.8)
+
+Compilation and instalation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Make sure you have configured kernel headers in /usr/src/linux, or specify other location via KDIR.
+
+.. code-block:: sh
+
+  git clone https://github.com/xebd/accel-ppp.git accel-ppp-code
+
+Create directory for build source code and go to this directory. 
+
+.. code-block:: sh
+
+  mkdir /opt/accel-ppp-code/build
+  cd /opt/accel-ppp-code/build/
+
+
+.. code-block:: sh
+
+  cmake [-DBUILD_DRIVER=FALSE] [-DKDIR=/usr/src/linux] [-DCMAKE_INSTALL_PREFIX=/usr/local] [-DCMAKE_BUILD_TYPE=Release] [-DLOG_PGSQL=FALSE] [-DSHAPER=FALSE] [-DRADIUS=TRUE] [-DNETSNMP=FALSE] ..
+
+.. admonition:: Notice:
+   Please note that the double dot record in the end of the command is essential.
+   You'll probably get error or misconfigured sources if you miss it.
+
+BUILD_DRIVER, KDIR, CMAKE_INSTALL_PREFIX, CMAKE_BUILD_TYPE, LOG_PGSQL, SHAPER, RADIUS are optional,
+But while pptp is not present in mainline kernel you probably need BUILD_DRIVER.
+ 
