@@ -11,7 +11,7 @@ Install
     centos.rst
 
 Install on Debian
-^^^^^^^^^^^^^^^^^
+-----------------
 Preparation
 Before compile and build package need satisfy some dependencies
 cmake - open-source system that manages the build process
@@ -23,5 +23,6 @@ libssl-dev - source code of pcre lib, accel-ppp need it for use regular expressi
 liblua5.1-0-dev - this need for create custom username (IPoE) from packet. Script write on lua language 
 
 .. code-block:: sh
+
   apt-get install -y build-essential cmake gcc linux-headers-`uname -r` git libpcre3-dev libssl-dev liblua5.1-0-dev
 
