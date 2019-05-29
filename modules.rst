@@ -1,4 +1,4 @@
-Modules
+modules
 =======
 
 Section [modules] containes list of modules to load
@@ -26,3 +26,7 @@ Section [modules] containes list of modules to load
 * **sigchld** - Helper module to manage child processes, required by pppd_compat.
 * **pppd_compat** - this module starts pppd compatible ip-up/ip-down scripts and ip-change to handle RADIUS CoA request.
 * **connlimit** - this module limits connection rate from single source.
+
+.. admonition:: Note:
+
+   Can’t change with reload, for apply need daemon restart with drop active sessions.
