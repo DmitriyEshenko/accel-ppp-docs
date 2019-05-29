@@ -3,6 +3,7 @@ Generic Installation
 
 Requirment
 ^^^^^^^^^^
+
   1. modern linux distribution
   2. kernel-2.6.25 or later
   4. cmake-2.6 or later
