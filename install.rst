@@ -54,7 +54,7 @@ For building code need we can set next params:
 
 cmake -DBUILD_IPOE_DRIVER=TRUE -DBUILD_VLAN_MON_DRIVER=TRUE -DCMAKE_INSTALL_PREFIX=/usr -DKDIR=/usr/src/linux-headers-`uname -r` -DLUA=TRUE -DCPACK_TYPE=Debian9 ..
 
-  Notice: ended symbols **..** sets path to accel-ppp source code, not delete this! 
+  Notice: ended symbols **..** sets path to accel-ppp source code, not delete this! Or you can replace it full path to accel-ppp-code like /opt/accel-ppp-code/
 
 Compile:
 ^^^^^^^^
