@@ -6,6 +6,7 @@ Install
     :caption: Contents:
     :includehidden:
     
+    generic_inst.rst
     ansible.rst
     debian.rst
     centos.rst
