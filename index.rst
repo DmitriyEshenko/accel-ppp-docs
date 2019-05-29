@@ -17,6 +17,7 @@ Accel-ppp is a high performance PPTP/L2TP/SSTP/PPPoE/IPoE server for Linux.
     l2tp.rst
     ipoe.rst
     sstp.rst
+    shaper.rst
     
 .. toctree::
     :maxdepth: 2
