@@ -9,5 +9,6 @@ Installation
     generic_inst.rst
     ansible.rst
     debian.rst
+    ubuntu.rst
     centos.rst
 
