@@ -67,8 +67,6 @@ Create DEB package:
 
   cpack -G DEB
 
-.. code-block:: sh
-
 Install package:
 
 .. code-block:: sh
@@ -91,6 +89,6 @@ or run manual (not recommended)
 
 .. code-block:: sh
 
-  accel-pppd -d -c /etc/accel-ppp.conf
+  accel-pppd -d -c /etc/accel-ppp.conf -p /var/run/accel-ppp.pid
 
 
