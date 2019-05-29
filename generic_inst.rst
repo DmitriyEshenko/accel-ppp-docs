@@ -19,7 +19,8 @@ Compilation and instalation
 
 Make sure you have configured kernel headers in /usr/src/linux, or specify other location via KDIR.
 
-Download accel-ppp source code with git client, tree master . Master tree contain actual patches last release. 
+Download accel-ppp source code with git client, tree master . Master tree contain actual patches last release.
+
 .. code-block:: sh
 
   git clone https://github.com/xebd/accel-ppp.git accel-ppp-code
@@ -41,7 +42,7 @@ Create directory for build source code and go to this directory.
    You'll probably get error or misconfigured sources if you miss it.
 
 BUILD_DRIVER, KDIR, CMAKE_INSTALL_PREFIX, CMAKE_BUILD_TYPE, LOG_PGSQL, SHAPER, RADIUS are optional,
-But while pptp is not present in mainline kernel you probably need BUILD_DRIVER.
+but while pptp is not present in mainline kernel you probably need BUILD_DRIVER.
 
 .. code-block:: sh
 
