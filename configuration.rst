@@ -22,6 +22,7 @@ Configuration file consists of sections in form:
     :includehidden:
     
     modules.rst
+    core.rst
     radius.rst
     pppoe.rst
     pptp.rst
