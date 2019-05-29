@@ -29,4 +29,4 @@ Section [modules] containes list of modules to load
 
 .. admonition:: Note:
 
-   Can’t change with reload, for apply need daemon restart with drop active sessions.
+   Can’t change with reload, for apply changes need daemon restart with drop active sessions.
