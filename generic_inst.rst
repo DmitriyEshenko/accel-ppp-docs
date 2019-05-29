@@ -4,14 +4,15 @@ Generic Installation
 Requirment
 ^^^^^^^^^^
 
-1. modern linux distribution
-2. kernel-2.6.25 or later
-4. cmake-2.6 or later
-5. libnl-2.0 or probably later (optional, required for builtin shaper)
-6. libcrypto-0.9.8 or probably later (openssl-0.9.8)
-7. libpcre
-8. net-snmp-5.x (optional, required for snmp)
-9. libssl-0.9.8 or probably later (openssl-0.9.8)
+* modern linux distribution
+* kernel-2.6.25 or later
+* cmake-2.6 or later
+* libnl-2.0 or probably later (optional, required for builtin shaper)
+* libcrypto-0.9.8 or probably later (openssl-0.9.8)
+* libpcre
+* net-snmp-5.x (optional, required for snmp)
+* libssl-0.9.8 or probably later (openssl-0.9.8)
+* liblua5.1 probably later (optional, required for create username fundamental on packet header information)
 
 Compilation and instalation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
