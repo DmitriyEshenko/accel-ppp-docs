@@ -49,3 +49,51 @@ For building code need we can set next params:
 * **-DKDIR=/usr/src/linux-headers-`uname -r`** sets path to Linux kernel source code. Need only for build IPOE, VLAN-MON.
 * **-DCMAKE_INSTALL_PREFIX=/usr** path for install executable code. If you build DEB package, not recommended change this.
 * **-DCPACK_TYPE=Debian9** this arguments for building DEB package. If used debian other version, set it. For example, if used debian 8 set **-DCPACK_TYPE=Debian8**
+
+.. code-block:: sh
+
+cmake -DBUILD_IPOE_DRIVER=TRUE -DBUILD_VLAN_MON_DRIVER=TRUE -DCMAKE_INSTALL_PREFIX=/usr -DKDIR=/usr/src/linux-headers-`uname -r` -DLUA=TRUE -DCPACK_TYPE=Debian9 ..
+
+  Notice: ended symbols **..** sets path to accel-ppp source code, not delete this! 
+
+Compile:
+^^^^^^^^
+
+.. code-block:: sh
+
+  make 
+
+Create DEB package 
+^^^^^^^^^^^^^^^^
+.. code-block:: sh
+
+  cpack -G DEB
+
+.. code-block:: sh
+
+Install package 
+^^^^^^^^^^^^^^^
+
+.. code-block:: sh
+
+  dpkg -i accel-ppp.deb
+
+If you have success packet install, rename config file to accel-ppp.conf
+
+.. code-block:: sh
+
+  mv /etc/accel-ppp.conf.dist /etc/accel-ppp.conf
+  
+Edit accel-ppp.conf for you schemas and run accel-ppp Run as systemd unit
+
+.. code-block:: sh
+
+  systemctl start accel-ppp
+
+or run manual (not recommended)
+
+.. code-block:: sh
+
+  accel-pppd -d -c /etc/accel-ppp.conf
+
+
