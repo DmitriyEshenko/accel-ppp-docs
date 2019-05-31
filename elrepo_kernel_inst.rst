@@ -14,7 +14,7 @@ Install kernel-ml and kernel-ml-devel
   
 .. code-block:: sh
 
-  yum install kernel-mlyum --enablerepo=elrepo-kernel install -y kernel-ml kernel-ml-devel
+ yum --enablerepo=elrepo-kernel install -y kernel-ml kernel-ml-devel
 
 To show installed kernels run command:
 
