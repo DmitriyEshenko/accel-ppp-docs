@@ -33,4 +33,4 @@ Reboot system and check kernel version
 .. code-block:: sh
   uname -r
   
-Now you can continue install accel-ppp with modules **vlan_mon** and **ipoe**
+Now you can continue :ref:`install_centos` with modules **vlan_mon** and **ipoe**
