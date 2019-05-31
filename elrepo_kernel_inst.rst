@@ -10,8 +10,8 @@ To set up ELRepo repository, you need to import its official GPG key and then in
   
   rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
   rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
-  
-  Install kernel-ml and kernel-ml-devel
+
+Install kernel-ml and kernel-ml-devel
   
 .. code-block:: sh
 
