@@ -1,10 +1,7 @@
 Install kernel from elrepo
 ==========================
 
-Enable ELRepo Repository on CentOS/RHEL
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To set up ELRepo repository, you need to import its official GPG key and then install ELRepo RPM as follows.
+At first need enable ELRepo Repository. To set up ELRepo repository, you need to import its official GPG key and then install ELRepo RPM as follows.
 
 .. code-block:: sh
   
