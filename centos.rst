@@ -68,6 +68,14 @@ Install package:
 
   rpm -ivh accel-ppp.rpm
 
+If accel-ppp was build with modules **ipoe** and **vlan_mon**, need next:
+
+.. code-block:: sh
+
+  cp ./drivers/ipoe/driver/ipoe.ko /lib/modules/`uname -r`/kernel/net
+  cp ./drivers/vlan_mon/driver/vlan_mon.ko /lib/modules/`uname -r`/kernel/net
+  depmod -a
+
 If you have success packet install, rename config file to accel-ppp.conf
 
 .. code-block:: sh
