@@ -22,7 +22,7 @@ To show installed kernels run command:
 
   awk -F\' '$1=="menuentry " {print $2}' /etc/grub2.cfg
   
-Snd set installed kernel as default for grub2 bootloader:
+Set installed kernel as default for grub2 bootloader:
 
 .. code-block:: sh
 
