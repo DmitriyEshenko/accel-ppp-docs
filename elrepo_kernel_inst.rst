@@ -14,19 +14,19 @@ Install kernel-ml and kernel-ml-devel
 
   yum install kernel-mlyum --enablerepo=elrepo-kernel install -y kernel-ml kernel-ml-devel
 
-Show installed kernels
+To show installed kernels run command:
 
 .. code-block:: sh
 
   awk -F\' '$1=="menuentry " {print $2}' /etc/grub2.cfg
   
-and set installed kernel as default for grub2 bootloader
+Snd set installed kernel as default for grub2 bootloader:
 
 .. code-block:: sh
 
   grub2-set-default 0
   
-reboot system and check kernel version
+Reboot system and check kernel version
 
 .. code-block:: sh
   uname -r
