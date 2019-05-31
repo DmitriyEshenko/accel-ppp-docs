@@ -11,8 +11,12 @@ Network tuning
 RSS
 ^^^
 
+RSS (Receive Side Scaling)
+
 RPS
 ^^^
+
+RPS (Receive Packet Steering)
 
 NIC OFFLOADS
 ^^^^^^^^^^^^
