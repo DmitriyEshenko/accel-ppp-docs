@@ -1,7 +1,7 @@
 Install on Centos
 -----------------
 
-For compile with modules **vlan_mon** and **ipoe** on centos need install vanilla linux kernel or kernel from elrepo. If that not needed, just set **-DBUILD_IPOE_DRIVER=FALSE** and **-DBUILD_VLAN_MON_DRIVER=FALSE** on cmake.
+For compile with modules **vlan_mon** and **ipoe** on centos need install vanilla linux kernel or :ref:`elrepo_kernel_inst` . If that not needed, just set **-DBUILD_IPOE_DRIVER=FALSE** and **-DBUILD_VLAN_MON_DRIVER=FALSE** on cmake.
 
 **Preparation**
 
