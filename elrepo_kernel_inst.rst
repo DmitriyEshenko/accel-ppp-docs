@@ -1,3 +1,5 @@
+.. elrepo_kernel_inst:
+
 Install kernel from elrepo
 ==========================
 
