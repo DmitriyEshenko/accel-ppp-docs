@@ -2,8 +2,7 @@
 
 IPoE
 ----
- What is IPoE?
- Methot authenication users, control sessions and dilivery without any tunnel "called" as IPoE (IP over Ethernet).
+Methot authenication users, control sessions and dilivery without any tunnel "called" as IPoE (IP over Ethernet).
 Accel-ppp support L2 and L3 topologies and start sessions on DHCP Discover or unclacified packet.
 
 Develop auxiliary kernel module for sessions start on unclacified packet and shared interfaces.
