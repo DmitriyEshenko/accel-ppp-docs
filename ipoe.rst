@@ -36,6 +36,7 @@ Section IPoE contain many flexible customization.
     
 **vlan-timeout=n**
     specifies time of vlan inactivity before it will be removed (seconds). By default is 60 seconds.
+    
 **vlan-name=pattern**
     specifies pattern of vlan interface name. By default **vlan-name=%I.%N**. Pattern may contain following macros: 
         * %I: - name of patern interface.
