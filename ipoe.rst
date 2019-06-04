@@ -26,37 +26,42 @@ Section IPoE contain many flexible customization.
     Define max sessions time in seconds. After this time session will be terminated. May redefine with radius attribute **Session-Timeout**
     
 **shared=0|1**
-    Specifies where interface is shared by multiple users (active by default=1). If used vlan-per-user need turn this to 0. Also may be define per-interface.
+    By default is active ``shared=1``
+    
+    Specifies where interface is shared by multiple users. If used vlan-per-user need turn this to 0. Also may be define per-interface.
     
 **unit-cache=n**
+    By default is disabled: ``unit-cache=0``
+
     Specifies number of interfaces to keep in cache. It means that don't destory interface after corresponding session is destoyed, instead place it to cache and use it later for new sessions repeatedly. Actial only if used shared interfaces.
     
 **vlan-mon=[re:]name[,filter]**
     vlan-mon needs for automatiicaly crate vlans interfaces, more often on vlan-per-user schemas. Support regular expression (**re:**). Parameter specifies list of vlans or ranges of vlans to monitor for and may be in following form: vlan-mon=eth1,2,5,10,20-30
     
 **vlan-timeout=n**
-    Specifies time of vlan inactivity before it will be removed (seconds). By default is 60 seconds.
+    By default is 60 seconds.
+    Specifies time on second of vlan inactivity before it will be removed.
     
 **vlan-name=pattern**
     By default ``vlan-name=%I.%N``.
     
     Specifies pattern of vlan interface name. Pattern may contain following macros:
     
-        %I: - name of patern interface.
+        ``%I`` - name of patern interface.
         
-        %N: - number of vlan.
+        ``%N`` - number of vlan.
         
-        %P: - number of vlan of parent interface.
+        ``%P`` - number of vlan of parent interface.
         
     Works with params interface and required regular expression.
   
-**noauth=n**
-    By default 0.
+**noauth=0|1**
+    By default is disabled: ``noauth=0`` and used RADIUS or chap-secrets authentication.
 
     Allows users to connect without authentication by radius or chap-secrets.For correct work it is necessary to use with ip-pool.
 
 **ifcfg=0|1**
-    By default active ``ifcfg=1``.
+    By default is active: ``ifcfg=1``.
 
     Parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured.
 
@@ -69,12 +74,12 @@ Section IPoE contain many flexible customization.
     debug: libnetlink: RTNETLINK answers: Invalid argument
 
 **check-mac-change=0|1**
-    By default active ``check-mac-change=1``.
+    By default is active: ``check-mac-change=1``.
     
     Terminate session when detects change of mac address of client.
 
 **soft-terminate=0|1**
-    By default disabled ``soft-terminat=0``.
+    By default is disabled: ``soft-terminat=0``.
 
     When terminating sessions through ``cli`` or ``Radius Disconnect-Message``, the session will not be terminated immediately, but will be marked as finished and client will continue working, but next time renew lease the session will be terminated. Session will terminate immediately when expired `max-lease-time`. For manually terminate session immediately you may use cli command ``accel-cmd terminate <session selector> hard``
 
