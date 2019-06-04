@@ -52,13 +52,13 @@ Section IPoE contain many flexible customization.
   
 **noauth=n**
     By default 0.
-    
+
     Allows users to connect without authentication by radius or chap-secrets.For correct work it is necessary to use with ip-pool.
 
 **ifcfg=0|1**
     By default active **ifcfg=1**.
-    
-    parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured. 
+
+    Parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured. 
 
  **proto=n**
     By default 3 - boot.
