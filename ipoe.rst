@@ -30,7 +30,7 @@ Section IPoE contain many flexible customization.
 **shared=0|1**
     By default is active ``shared=1``
     
-    Specifies where interface is shared by multiple users. If used vlan-per-user need turn this to 0. Also may be define per-interface.
+    Specifies where interface is shared by multiple users. If used vlan-per-user need turn this to 0. Also may defined per-interface.
     
 **unit-cache=n**
     By default is disabled: ``unit-cache=0``
@@ -65,7 +65,7 @@ Section IPoE contain many flexible customization.
 **ifcfg=0|1**
     By default is active: ``ifcfg=1``
 
-    Parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured.
+    Parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured. Also may defined per-interface.
 
 **proto=n**
     By default 3 - boot.
