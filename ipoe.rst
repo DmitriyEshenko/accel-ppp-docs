@@ -5,7 +5,7 @@ IPoE
 Methot authenication users, control sessions and dilivery without any tunnel "called" as IPoE (IP over Ethernet).
 Accel-ppp support L2 and L3 topologies and start sessions on DHCP Discover or unclacified packet.
 
-Develop auxiliary kernel module for sessions start on unclacified packet and shared interfaces.
+Develop auxiliary kernel module for sessions start on unclassified packet and shared interfaces.
 This module creates virtual interface, an analogue of ifb and used for sessions shaper and One-to-one NAT.
 
 The difference between L2 and L3
@@ -23,7 +23,16 @@ Section IPoE contain many flexible customization.
     Default value is ``verbose=0``
 
     Writes more detailed logs.
-    
+
+**username=ifname|lua:function**
+    By default for DHCP sessions ``username=ifname``, for sessions start by unclassified packet (``start=UP``) ``username`` is client ip address.
+
+    For ``username=ifname`` then interface name from which packet was arrived will be used as username.
+
+
+    For ``username=lua:username`` then lua function with name ``username`` will be called to construct username from dhcp packet fields.
+
+
 **session-timeout=n**
     Define max sessions time in seconds. After this time session will be terminated. May redefine with radius attribute **Session-Timeout**
     
@@ -60,7 +69,7 @@ Section IPoE contain many flexible customization.
 **noauth=0|1**
     By default is disabled: ``noauth=0`` and used RADIUS or chap-secrets authentication.
 
-    Allows users to connect without authentication by radius or chap-secrets.For correct work it is necessary to use with ip-pool.
+    Allows users to connect without authentication by radius or chap-secrets. For correct work it is necessary to use with ip-pool.
 
 **ifcfg=0|1**
     By default is active: ``ifcfg=1``
