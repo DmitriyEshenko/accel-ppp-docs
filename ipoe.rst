@@ -64,7 +64,7 @@ Section IPoE contain many flexible customization.
     By default 3 - boot.
     
     Specifies number of protocol to be used for inserted routes. Works only with **ifcg=0**, when the routes create an accel-ppp, not a kernel. Also need exist gw ip address in the system on any of the interfaces, otherwise an error will be output to the accel-ppp.log
-.. attention:: Log output:
+.. admonition:: Log output:
 
     debug: libnetlink: RTNETLINK answers: Invalid argument
 
