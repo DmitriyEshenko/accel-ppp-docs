@@ -58,7 +58,7 @@ Section IPoE contain many flexible customization.
 **ifcfg=0|1**
     By default active **ifcfg=1**.
 
-    Parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured. 
+    Parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured.
 
  **proto=n**
     By default 3 - boot.
