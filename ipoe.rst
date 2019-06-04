@@ -18,6 +18,7 @@ IPoE configuration overview
 Section IPoE contain many flexible customization.
 
 **[ipoe]**
+
 **verbose=0|1**
     writes more detailed logs (default=0)
 **session-timeout=n**
