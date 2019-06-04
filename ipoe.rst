@@ -38,7 +38,7 @@ Section IPoE contain many flexible customization.
     Specifies time of vlan inactivity before it will be removed (seconds). By default is 60 seconds.
     
 **vlan-name=pattern**
-    By default **vlan-name=%I.%N**.
+    By default ``vlan-name=%I.%N``.
     
     Specifies pattern of vlan interface name. Pattern may contain following macros:
     
@@ -56,14 +56,14 @@ Section IPoE contain many flexible customization.
     Allows users to connect without authentication by radius or chap-secrets.For correct work it is necessary to use with ip-pool.
 
 **ifcfg=0|1**
-    By default active **ifcfg=1**.
+    By default active ``ifcfg=1``.
 
     Parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured.
 
 **proto=n**
     By default 3 - boot.
     
-    Specifies number of protocol to be used for inserted routes. Works only with **ifcg=0**, when the routes create an accel-ppp, not a kernel. Also need exist gw ip address in the system on any of the interfaces, otherwise an error will be output to the accel-ppp.log
+    Specifies number of protocol to be used for inserted routes. Works only with ``ifcg=0``, when the routes create an accel-ppp, not a kernel. Also need exist gw ip address in the system on any of the interfaces, otherwise an error will be output to the accel-ppp.log
 .. admonition:: Log output:
 
     debug: libnetlink: RTNETLINK answers: Invalid argument
@@ -75,3 +75,10 @@ Section IPoE contain many flexible customization.
 
 **soft-terminate=0|1**
     By default disabled ``soft-terminat=0``.
+
+    When terminating sessions through ``cli`` or ``Radius Disconnect-Message``, the session will not be terminated immediately, but will be marked as finished and client will continue working, but next time renew lease the session will be terminated. Session will terminate immediately when expired `max-lease-time`. For manually terminate session immediately you may use cli command ``accel-cmd terminate <session selector> hard``
+
+.. code-block:: sh
+
+    accel-cmd terminate if ipoe0 hard
+    
