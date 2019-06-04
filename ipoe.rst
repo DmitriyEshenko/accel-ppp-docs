@@ -57,12 +57,13 @@ Section IPoE contain many flexible customization.
 
 **ifcfg=0|1**
     By default active **ifcfg=1**.
+    
     parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured. 
 
  **proto=n**
     By default 3 - boot.
     
     Specifies number of protocol to be used for inserted routes. Works only with **ifcg=0**, when the routes create an accel-ppp, not a kernel. Also need exist gw ip address in the system on any of the interfaces, otherwise an error will be output to the accel-ppp.log
-        debug: libnetlink: RTNETLINK answers: Invalid argument
+.. attention:: debug: libnetlink: RTNETLINK answers: Invalid argument
 
  **check-mac-change=0|1**
