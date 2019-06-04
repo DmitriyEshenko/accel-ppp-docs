@@ -28,5 +28,5 @@ Section IPoE contain many flexible customization.
         * %I: - name of patern interface.
         * %N: - number of vlan.
         * %P: - number of vlan of parent interface.
-    :Works with params interface and required regular expression.
+        Works with params interface and required regular expression.
   
