@@ -24,13 +24,17 @@ Section IPoE contain many flexible customization.
 
     Writes more detailed logs.
 
+**lua-file=/path/to/file.lua**
+     By default not defined. Needs only if used lua functions for create username from packet header information. Often used with DHCP Option 82. Look :ref:`lua_examples` for more information.
+
 **username=ifname|lua:function**
     By default for DHCP sessions ``username=ifname``, for sessions start by unclassified packet (``start=UP``) ``username`` is client ip address.
 
-    For ``username=ifname`` then interface name from which packet was arrived will be used as username.
+    If ``username=ifname`` then interface name from which packet was arrived will be used as username.
 
 
-    For ``username=lua:username`` then lua function with name ``username`` will be called to construct username from dhcp packet fields.
+    If ``username=lua:username`` then lua function with name ``username`` will be called to construct username from dhcp packet fields.
+    Also may defined per-interface.
 
 
 **session-timeout=n**
