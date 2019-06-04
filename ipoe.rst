@@ -41,7 +41,10 @@ Section IPoE contain many flexible customization.
     By default **vlan-name=%I.%N**.
     specifies pattern of vlan interface name. Pattern may contain following macros:
         %I: - name of patern interface.
+        
         %N: - number of vlan.
+        
         %P: - number of vlan of parent interface.
+        
     Works with params interface and required regular expression.
   
