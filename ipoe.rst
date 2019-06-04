@@ -19,15 +19,15 @@ Section IPoE contain many flexible customization.
 
 **[ipoe]**
 
-**verbose=0|1**
+**verbose**=0|1
     Default value is ``verbose=0``
 
     Writes more detailed logs.
 
-**lua-file=/path/to/file.lua**
+**lua-file**=/path/to/file.lua
      By default not defined. Needs only if used lua functions for create username from packet header information. Often used with DHCP Option 82. Look :ref:`lua_examples` for more information.
 
-**username=**ifname|lua:function
+**username**=ifname|lua:function
     By default for DHCP sessions ``username=ifname``, for sessions start by unclassified packet (``start=UP``) ``username`` is client ip address.
 
     If ``username=ifname`` then interface name from which packet was arrived will be used as username.
