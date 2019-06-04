@@ -25,8 +25,8 @@ Section IPoE contain many flexible customization.
   :**vlan-mon=[re:]name[,filter]**: - vlan-mon needs for automatiicaly crate vlans interfaces, more often on vlan-per-user schemas. Support regular expression (**re:**). Parameter specifies list of vlans or ranges of vlans to monitor for and may be in following form: vlan-mon=eth1,2,5,10,20-30
   :**vlan-timeout=n**: - specifies time of vlan inactivity before it will be removed (seconds). By default is 60 seconds.
   :**vlan-name=pattern**: - specifies pattern of vlan interface name. By default **vlan-name=%I.%N**. Pattern may contain following macros: 
-    :%I: - name of patern interface.
-    :%N: - number of vlan.
-    :%P: - number of vlan of parent interface.
+        * %I: - name of patern interface.
+        * %N: - number of vlan.
+        * %P: - number of vlan of parent interface.
     :Works with params interface and required regular expression.
   
