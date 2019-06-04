@@ -1,7 +1,7 @@
 Configuration
 =============
 
-accel-pppd reads options from this file, usually /etc/accel-ppp.conf
+Accel-pppd reads options from configuration file, it usually located at ``/etc/accel-ppp.conf`` but may be redefine daemon  input arguments ``accel-pppd -c /path/to/accel-ppp.conf``
 
 Configuration file consists of sections in form:
 
