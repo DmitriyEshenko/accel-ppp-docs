@@ -20,7 +20,9 @@ Section IPoE contain many flexible customization.
 **[ipoe]**
 
 **verbose=0|1**
-    Writes more detailed logs (default=0)
+    Default value is ``verbose=0``
+
+    Writes more detailed logs.
     
 **session-timeout=n**
     Define max sessions time in seconds. After this time session will be terminated. May redefine with radius attribute **Session-Timeout**
@@ -43,7 +45,7 @@ Section IPoE contain many flexible customization.
     Specifies time on second of vlan inactivity before it will be removed.
     
 **vlan-name=pattern**
-    By default ``vlan-name=%I.%N``.
+    By default ``vlan-name=%I.%N``
     
     Specifies pattern of vlan interface name. Pattern may contain following macros:
     
@@ -61,7 +63,7 @@ Section IPoE contain many flexible customization.
     Allows users to connect without authentication by radius or chap-secrets.For correct work it is necessary to use with ip-pool.
 
 **ifcfg=0|1**
-    By default is active: ``ifcfg=1``.
+    By default is active: ``ifcfg=1``
 
     Parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured.
 
@@ -74,12 +76,12 @@ Section IPoE contain many flexible customization.
     debug: libnetlink: RTNETLINK answers: Invalid argument
 
 **check-mac-change=0|1**
-    By default is active: ``check-mac-change=1``.
+    By default is active: ``check-mac-change=1``
     
     Terminate session when detects change of mac address of client.
 
 **soft-terminate=0|1**
-    By default is disabled: ``soft-terminat=0``.
+    By default is disabled: ``soft-terminat=0``
 
     When terminating sessions through ``cli`` or ``Radius Disconnect-Message``, the session will not be terminated immediately, but will be marked as finished and client will continue working, but next time renew lease the session will be terminated. Session will terminate immediately when expired `max-lease-time`. For manually terminate session immediately you may use cli command ``accel-cmd terminate <session selector> hard``
 
