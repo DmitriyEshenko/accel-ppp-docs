@@ -18,8 +18,7 @@ IPoE configuration overview
 Section IPoE contain many flexible customization.
 
 **[ipoe]**
-::
-    :**verbose=0|1** - writes more detailed logs (default=0)
+  :**verbose=0|1**: writes more detailed logs (default=0)
   * **session-timeout=n** - max sessions time in seconds. After this time session will be terminated. May redefine with radius attribute **Session-Timeout**
   * **shared=0|1** - parameter specifies where interface is shared by multiple users (active by default=1). If used vlan-per-user need turn this to 0. Also may be define per-interface.
 : **unit-cache=n** - specifies number of interfaces to keep in cache. It means that don't destory interface after corresponding session is destoyed, instead place it to cache and use it later for new sessions repeatedly. Actial only if used shared interfaces.
