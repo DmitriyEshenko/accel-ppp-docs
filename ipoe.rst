@@ -68,4 +68,10 @@ Section IPoE contain many flexible customization.
 
     debug: libnetlink: RTNETLINK answers: Invalid argument
 
- **check-mac-change=0|1**
+**check-mac-change=0|1**
+    By default active ``check-mac-change=1``.
+    
+    Terminate session when detects change of mac address of client.
+
+**soft-terminate=0|1**
+    By default disabled ``soft-terminat=0``.
