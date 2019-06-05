@@ -1,6 +1,6 @@
 .. _ipoe:
 
-IPoE
+[ipoe]
 ----
 Methot authenication users, control sessions and dilivery without any tunnel "called" as IPoE (IP over Ethernet).
 Accel-ppp support L2 and L3 topologies and start sessions on DHCP Discover or unclacified packet.
