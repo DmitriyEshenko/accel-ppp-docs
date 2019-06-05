@@ -84,3 +84,5 @@ or run manual (not recommended)
   accel-pppd -d -c /etc/accel-ppp.conf -p /var/run/accel-ppp.pid
 
 
+Update procedure
+^^^^^^^^^^^^^^^^^
