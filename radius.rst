@@ -1,4 +1,4 @@
-RADIUS
+[radius]
 ======
 
 CoA
