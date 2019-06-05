@@ -1,5 +1,5 @@
-modules
-=======
+[modules]
+=========
 
 Section [modules] containes list of modules to load
 
