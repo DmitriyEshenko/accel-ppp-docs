@@ -1,4 +1,4 @@
-core
+[core]
 ======
 
 Section [core] consist main daemon params.
