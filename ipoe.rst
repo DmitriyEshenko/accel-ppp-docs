@@ -144,10 +144,22 @@ Section IPoE contain many flexible customization.
     By default not defined.
      
      Specifies name of ipset list. If L4-Redirect radius attribute is received and it's value is not 0 or '0' then accel-ppp will add client's ip to that ipset name.
-     
- **agent-remote-id=<identifier>**
+
+**agent-remote-id=<identifier>**
     By default not defined.
 
     If accel-ppp used as DHCP relay, than to DHCP requests will inserted Option 82 with agent-remote-id and agent-circuit-id with interface name from which received client request.
+
+**local-net=x.x.x.x/mask**
+    By default not defined.
     
- 
+    Specifies networks from which packets will be treated as unclassified. Need only for ``start=UP``. You may specify multiple local-net options. For example:
+
+.. code-block:: sh
+
+    local-net=100.64.0.0/24
+    local-net=192.168.0.0/24
+    local-net=172.16.0.0/24
+
+
+    
