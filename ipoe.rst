@@ -24,6 +24,24 @@ Section IPoE contain many flexible customization.
 
     Writes more detailed logs.
 
+**mode=L2|L3**
+    By default mode is L2.
+    
+    Parameter specifies client connectivity mode. ``mode=L2`` then it means that clients are on same network where interfaceis. ``mode=L3`` means that client are behind some router.  Also may defined per-interface.
+
+**start=dhcpv4|up|auto**
+    By default is not defined. Important to set this.
+    
+    Parameter specifies which way session starts.
+    
+    **dhcpv4 - start on DHCP Discover.
+
+    **UP - unclassified packet.
+
+    **auto - means automatically start session with username=interface name. Use it with conjunction vlan_mon.
+
+    Also may defined per-interface.
+
 **lua-file=/path/to/file.lua**
      By default not defined.
      
@@ -302,3 +320,6 @@ Section IPoE contain many flexible customization.
 
     Per-interface weight=0 has special meaning as backup (fail-over) interface, f.e. it terminates session on any received weight.
 
+**interface=[re:]ifname[,shared=0|1][,mode=L2|L3][,start=dhcpv4|up][,ifcfg=0|1][,mtu=N][,range=сеть/маска][,relay=адрес][,giaddr=адрес]
+interface=[re:]name[,mode=L2|L3][,shared=0|1][,start=dhcpv4|up|auto]
+**
