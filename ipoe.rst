@@ -145,6 +145,16 @@ Section IPoE contain many flexible customization.
      
      Specifies name of ipset list. If L4-Redirect radius attribute is received and it's value is not 0 or '0' then accel-ppp will add client's ip to that ipset name.
 
+**l4-redirect-on-reject=n**
+    By default is disabled: ``l4-redirect-on-reject=0``
+
+    Specified time in seconds for creating temporary sessions if radius rejects access and  'ip rule add from ip_addr table l4-redirect-table' rule will be created.
+
+**l4-redirect-ip-pool=<pool name>**
+    By default not defined.
+
+    Allocates ip address from specified pool name if radius rejects access. Pool must be sets in section `[ippool]`
+
 **agent-remote-id=<identifier>**
     By default not defined.
 
@@ -161,5 +171,31 @@ Section IPoE contain many flexible customization.
     local-net=192.168.0.0/24
     local-net=172.16.0.0/24
 
+**attr-dhcp-client-ip=<attribute>**
+    By default not defined.
 
+    Specified radius attribute which contains ip address for allocat to client. If set custom attribute then need add its in radius dictionary. For example:
     
+.. code-block:: sh
+
+    attr-dhcp-client-ip=DHCP-Client-IP-Address
+    
+**attr-dhcp-router-ip=<attribute>**
+    By default not defined.
+
+
+**attr-dhcp-mask=<attribute>**
+    By default not defined.
+
+
+**gw-ip-address=x.x.x.x/mask**
+    By default not defined.
+    
+    Specifies address to be used as server ip address if radius can assign only client address. In such case if client address is matched network and mask then specified address and mask will be used. You can specify multiple such options.
+    For example:
+
+.. code-block:: sh
+
+    gw-ip-address=100.64.0.1/24
+    gw-ip-address=192.168.0.1/24
+    gw-ip-address=172.16.0.0/24
