@@ -49,6 +49,8 @@ Section IPoE contain many flexible customization.
     Also you can specify fixed password in ``<string>`` or leave empty.
 
 **session-timeout=n**
+     By default is disabled: ``session-timeout=0``
+
     Define max sessions time in seconds. After this time session will be terminated. May redefine with radius attribute **Session-Timeout**
 
 **idle-timeout=n**
@@ -134,11 +136,18 @@ Section IPoE contain many flexible customization.
     accel-cmd terminate if ipoe0 hard
     
 **l4-redirect-table=n**
-     By default disabled.
+     By default is disabled: ``l4-redirect-table=0``
      
      Specifies number of table. If L4-Redirect radius attribute is received and it's value is not 0 or '0' then accel-ppp will add following rule: ip rule add from <client_ip> table
 
-**l4-redirect-table=n**
-     By default is disabled: ``l4-redirect-table=0``
+**l4-redirect-ipset=<name>**
+    By default not defined.
      
+     Specifies name of ipset list. If L4-Redirect radius attribute is received and it's value is not 0 or '0' then accel-ppp will add client's ip to that ipset name.
      
+ **agent-remote-id=<identifier>**
+    By default not defined.
+
+    If accel-ppp used as DHCP relay, than to DHCP requests will inserted Option 82 with agent-remote-id and agent-circuit-id with interface name from which received client request.
+    
+ 
