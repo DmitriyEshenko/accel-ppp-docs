@@ -210,6 +210,16 @@ Section IPoE contain many flexible customization.
 
     If set custom attribute then need add its for both (radius server and accel-ppp) dictionaries.
 
+**attr-dhcp-lease-time=<attribute>**
+    By default not defined.
+
+    Specified radius attribute which contains lease time in seconds to be sent to DHCP client. This attribute has priority and may redefine value which sets in ``lease-time`` sets globally.
+
+**attr-dhcp-renew-time=<attribute>**
+    By default not defined.
+    
+    Specified radius attribute which contains lease renew time (option 58) in seconds to be sent to DHCP client. This attribute has priority and may redefine value which sets in ``renew-time`` sets globally.
+
 **gw-ip-address=x.x.x.x/mask**
     By default not defined.
     
