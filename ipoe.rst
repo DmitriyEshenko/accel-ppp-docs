@@ -246,14 +246,28 @@ Section IPoE contain many flexible customization.
 
     Need add custom attribute in both radius and accel-ppp dictionaries. Example:
 
-    ``ATTRIBUTE       DHCP-Option82             245 octets``
-    
+.. code-block:: sh
+
+    ATTRIBUTE       DHCP-Option82             245 octets
     
 
 **attr-dhcp-opt82-remote-id=<attribute>**
     By default not defined.
 
+    Specifies radius attribute which will contain only **Agent Remote Id** from DHCP packet header and send to radius server. Example with existing attribute in dictionary:
+
+.. code-block:: sh
+
+    attr-dhcp-opt82-remote-id=DHCP-Agent-Remote-Id
 
 **attr-dhcp-opt82-circuit-id=<attribute>**
     By default not defined.
+    
+    Specifies radius attribute which will contain only **Agent Circuit Id** from DHCP packet header and send to radius server. Example with existing attribute in dictionary:
+
+.. code-block:: sh
+
+    attr-dhcp-opt82-circuit-id=DHCP-Agent-Circuit-Id
+    
+
     
