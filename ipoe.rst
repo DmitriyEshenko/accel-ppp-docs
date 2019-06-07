@@ -231,3 +231,15 @@ Section IPoE contain many flexible customization.
     gw-ip-address=100.64.0.1/24
     gw-ip-address=192.168.0.1/24
     gw-ip-address=172.16.0.0/24
+
+****attr-dhcp-opt82=<attribute>**
+    By default not defined.
+
+
+**attr-dhcp-opt82-remote-id=<attribute>**
+    By default not defined.
+
+
+**attr-dhcp-opt82-circuit-id=<attribute>**
+    By default not defined.
+    
