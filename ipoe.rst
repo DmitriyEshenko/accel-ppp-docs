@@ -284,7 +284,5 @@ Section IPoE contain many flexible customization.
 
      offer-delay=0,100:1000,200:2500,300:5000,400:10000,-1
 
-    0 to 999 without delay, 1000 to 2499 delay 200 ms, 2500 to 4999 delay will be 300 ms
-
     Explain: Clients from 1 to 999 take DHCP offers without delay, client from 1000 to 2499 take DHCP offers with delay 100 ms, clients from 2500 to 4999 take DHCP offers with delay 200 ms, clients from 5000 to 9999 take DHCP offers with delay 300 ms, last client take DHCP offer with delay 400 ms and accel-ppp no more accept connections.
     
