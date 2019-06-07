@@ -191,7 +191,7 @@ Section IPoE contain many flexible customization.
     
 .. code-block:: sh
 
-    attr-dhcp-client-ip=DHCP-Client-IP-Address
+    attr-dhcp-router-ip=DHCP-Router-IP-Address
     
 .. admonition:: Note:
 
