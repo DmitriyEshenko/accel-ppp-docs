@@ -235,6 +235,20 @@ Section IPoE contain many flexible customization.
 ****attr-dhcp-opt82=<attribute>**
     By default not defined.
 
+    Specifies radius attribute which will contain option 82 from DHCP packet header in binary and send to radius server.
+    Example:
+
+.. code-block:: sh
+
+    attr-dhcp-opt82=DHCP-Option82
+    
+.. admonition:: Note:
+
+    Need add custom attribute in both radius and accel-ppp dictionaries. Example:
+
+    ``ATTRIBUTE       DHCP-Option82             245 octets``
+    
+    
 
 **attr-dhcp-opt82-remote-id=<attribute>**
     By default not defined.
