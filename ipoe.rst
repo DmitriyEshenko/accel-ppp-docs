@@ -48,7 +48,27 @@ Section IPoE contain many flexible customization.
 
 **session-timeout=n**
     Define max sessions time in seconds. After this time session will be terminated. May redefine with radius attribute **Session-Timeout**
+
+**idle-timeout=n**
+    By default is disabled ``idle-timeout=0`` 
     
+    Specifies timeout in seconds to wait for any packets from client, after this time session will terminated if client don't send any packet. Often used with ``mode=L3``.
+
+**lease-time=n**
+    By default ``lease-time=600``
+
+    Specifies lease time in seconds to be sent to DHCP client.
+
+**max-lease-time=n**
+    By default ``max-lease-time=660``
+
+    Specifies max lease time in seconds, after this time session will be terminated if client won't renew it.
+
+**renew-time=n**
+    By default ``renew-time`` calculate as lease-time/2.
+
+    Specifies lease renew time (option 58) in seconds to be sent to DHCP client.
+
 **shared=0|1**
     By default is active ``shared=1``
     
