@@ -191,7 +191,7 @@ Section IPoE contain many flexible customization.
     
 .. code-block:: sh
 
-    attr-dhcp-router-ip=DHCP-Router-IP-Address
+    attr-dhcp-router-ip=DHCP-Gateway-IP-Address
     
 .. admonition:: Note:
 
@@ -204,7 +204,7 @@ Section IPoE contain many flexible customization.
 
 .. code-block:: sh
 
-    attr-dhcp-mask=DHCP-Mask
+    attr-dhcp-mask=DHCP-Subnet-Mask
 
 .. admonition:: Note:
 
