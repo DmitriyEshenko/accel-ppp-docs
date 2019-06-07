@@ -244,7 +244,8 @@ Section IPoE contain many flexible customization.
     
 .. admonition:: Note:
 
-    Need add custom attribute in both radius and accel-ppp dictionaries. Example:
+    Need add custom attribute in both radius and accel-ppp dictionaries. By default dictionary is located at ``/usr/share/accel-ppp/radius/dictionary`` if accel-ppp build as pkg DEB or RPM  dictianary. Dictionary path may be redefine in section ``[radius]``.
+    Example adding custom attribute:
 
 .. code-block:: sh
 
