@@ -232,7 +232,7 @@ Section IPoE contain many flexible customization.
     gw-ip-address=192.168.0.1/24
     gw-ip-address=172.16.0.0/24
 
-****attr-dhcp-opt82=<attribute>**
+**attr-dhcp-opt82=<attribute>**
     By default not defined.
 
     Specifies radius attribute which will contain option 82 from DHCP packet header in binary and send to radius server.
@@ -244,7 +244,7 @@ Section IPoE contain many flexible customization.
     
 .. admonition:: Note:
 
-    Need add custom attribute in both radius and accel-ppp dictionaries. By default dictionary is located at ``/usr/share/accel-ppp/radius/dictionary`` if accel-ppp build as pkg DEB or RPM  dictianary. Dictionary path may be redefine in section ``[radius]``.
+    Need add custom attribute in both radius and accel-ppp dictionaries. By default dictionary is located at ``/usr/share/accel-ppp/radius/dictionary`` if accel-ppp build as pkg DEB or RPM. Dictionary path may be redefine in section ``[radius]``.
     Example adding custom attribute:
 
 .. code-block:: sh
@@ -270,5 +270,19 @@ Section IPoE contain many flexible customization.
 
     attr-dhcp-opt82-circuit-id=DHCP-Agent-Circuit-Id
     
-
+**offer-timeout=n**   
+    By default ``offer-timeout=10``
     
+    Specified time in seconds which accel-ppp wait DHCP request  from client. If client don't send DHCP request for this time, accel-ppp terminate session.
+    
+**offer-delay=delay[,delay1:count1[,delay2:count2[,...]]]**
+    By default not defined.
+    
+    One of load balancing mechanism. specifies delays in milliseconds (also in condition of connection count) to send DHCPOFFER . Last delay in list may be -1 which means don't accept new connections. List must to be sorted by count key. Example:
+
+.. code-block:: sh
+
+     offer-delay=0,100:1000,200:2500,300:5000,400:10000,-1
+
+    0 to 999 without delay, 1000 to 2499 delay 200 ms, 2500 to 4999 delay will be 300 ms
+
