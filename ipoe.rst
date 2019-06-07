@@ -29,11 +29,7 @@ Section IPoE contain many flexible customization.
     
     Parameter specifies client connectivity mode. ``mode=L2`` then it means that clients are on same network where interfaceis. ``mode=L3`` means that client are behind some router.  Also may defined per-interface.
 
-**start=dhcpv4|
-
-
-
-|auto**
+**start=dhcpv4|up|auto**
     By default is not defined. Important to set this.
     
     Parameter specifies which way session starts:
@@ -328,6 +324,11 @@ Section IPoE contain many flexible customization.
     By default ``calling-sid=mac``
 
     Specifies value of Calling-Station-Id radius attribute.
+
+**proxy-arp=n**
+    By default is disabled: ``proxy-arp=0``
+
+    Parameter specifies whether accel-ppp should reply to arp requests. Also may defined per-interface.
 
 **interface=[re:]ifname[,shared=0|1][,mode=L2|L3][,start=dhcpv4|up|auto][,ifcfg=0|1][,mtu=N][,range=x.x.x.x/mask][,relay=ip address][,giaddr=ip address]**
     
