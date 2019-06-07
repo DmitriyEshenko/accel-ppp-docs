@@ -34,11 +34,11 @@ Section IPoE contain many flexible customization.
     
     Parameter specifies which way session starts:
     
-    * dhcpv4 - start on DHCP Discover.
+    * **dhcpv4** - start on DHCP Discover.
 
-    * UP - unclassified packet.
+    * **UP** - unclassified packet.
 
-    * auto - means automatically start session with username=interface name. Use it with conjunction vlan_mon.
+    * **auto** - means automatically start session with username=interface name. Use it with conjunction vlan_mon.
 
     Also may defined per-interface.
 
