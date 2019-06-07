@@ -8,8 +8,7 @@ Accel-ppp support L2 and L3 topologies and start sessions on DHCP Discover or un
 Develop auxiliary kernel module for sessions start on unclassified packet and shared interfaces.
 This module creates virtual interface, an analogue of ifb and used for sessions shaper and One-to-one NAT.
 
-The difference between L2 and L3
-L2 incoming packet will be checked for the mac address set at the session start, and outgoing packets will be sent straight to this mac address without additional ARP requests, which provides protection against IP/mac address spoofing.
+The difference between L2 and L3. L2 incoming packet will be checked for the mac address set at the session start, and outgoing packets will be sent straight to this mac address without additional ARP requests, which provides protection against IP/mac address spoofing.
 In the case of L3, the outgoing packet will be routed according to the established routing rules.
 
 IPoE configuration overview
