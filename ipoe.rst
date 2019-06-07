@@ -289,3 +289,16 @@ Section IPoE contain many flexible customization.
 
     Clients from 1 to 999 take DHCP offers without delay, client from 1000 to 2499 take DHCP offers with delay 100 ms, clients from 2500 to 4999 take DHCP offers with delay 200 ms, clients from 5000 to 9999 take DHCP offers with delay 300 ms, last client take DHCP offer with delay 400 ms and accel-ppp no more accept connections.
     
+**weight=n**
+    By default not defined:
+ 
+    More modern load balancing mechanism based on weight.
+    
+    How it works:
+    On reception of DHCPDISCOVER accel-ppp sends broadcast DHCP message to port 67 with same xid and add special vendor-specific option where encodes its current session count multipled by weight. On reception of such message accel-ppp searches session with same xid and compares weight. If received weight is less than session's weight then it terminates this session.
+    **May be used as per-interface**
+
+.. admonition:: Note:
+
+    Per-interface weight=0 has special meaning as backup (fail-over) interface, f.e. it terminates session on any received weight.
+
