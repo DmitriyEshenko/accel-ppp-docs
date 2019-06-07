@@ -329,6 +329,7 @@ Section IPoE contain many flexible customization.
     By default is disabled: ``proxy-arp=0``
 
     Parameter specifies whether accel-ppp should reply to arp requests. Also may defined per-interface.
+    * Need improve
 
 **interface=[re:]ifname[,shared=0|1][,mode=L2|L3][,start=dhcpv4|up|auto][,ifcfg=0|1][,mtu=N][,range=x.x.x.x/mask][,relay=ip address][,giaddr=ip address]**
     
