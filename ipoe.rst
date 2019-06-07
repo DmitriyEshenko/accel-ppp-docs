@@ -25,7 +25,9 @@ Section IPoE contain many flexible customization.
     Writes more detailed logs.
 
 **lua-file=/path/to/file.lua**
-     By default not defined. Needs only if used lua functions for create username from packet header information. Often used with DHCP Option 82. Look :ref:`lua_examples` for more information.
+     By default not defined.
+     
+     Needs only if used lua functions for create username from packet header information. Often used with DHCP Option 82. Look :ref:`lua_examples` for more information.
 
 **username=ifname|lua:function**
     By default for DHCP sessions ``username=ifname``, for sessions start by unclassified packet (``start=UP``) ``username`` is client ip address.
@@ -83,7 +85,7 @@ Section IPoE contain many flexible customization.
     vlan-mon needs for automatiicaly crate vlans interfaces, more often on vlan-per-user schemas. Support regular expression (**re:**). Parameter specifies list of vlans or ranges of vlans to monitor for and may be in following form: vlan-mon=eth1,2,5,10,20-30
     
 **vlan-timeout=n**
-    By default is 60 seconds.
+    By default: ``vlan-timeout=60``.
     Specifies time on second of vlan inactivity before it will be removed.
     
 **vlan-name=pattern**
@@ -131,3 +133,12 @@ Section IPoE contain many flexible customization.
 
     accel-cmd terminate if ipoe0 hard
     
+**l4-redirect-table=n**
+     By default disabled.
+     
+     Specifies number of table. If L4-Redirect radius attribute is received and it's value is not 0 or '0' then accel-ppp will add following rule: ip rule add from <client_ip> table
+
+**l4-redirect-table=n**
+     By default is disabled: ``l4-redirect-table=0``
+     
+     
