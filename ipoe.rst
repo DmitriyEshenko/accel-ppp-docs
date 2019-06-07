@@ -29,14 +29,18 @@ Section IPoE contain many flexible customization.
     
     Parameter specifies client connectivity mode. ``mode=L2`` then it means that clients are on same network where interfaceis. ``mode=L3`` means that client are behind some router.  Also may defined per-interface.
 
-**start=dhcpv4|up|auto**
+**start=dhcpv4|
+
+
+
+|auto**
     By default is not defined. Important to set this.
     
     Parameter specifies which way session starts:
     
     * **dhcpv4** - start on DHCP Discover.
 
-    * **UP** - unclassified packet.
+    * **up** - unclassified packet.
 
     * **auto** - means automatically start session with username=interface name. Use it with conjunction vlan_mon.
 
@@ -48,7 +52,7 @@ Section IPoE contain many flexible customization.
      Needs only if used lua functions for create username from packet header information. Often used with DHCP Option 82. Look :ref:`lua_examples` for more information.
 
 **username=ifname|lua:function**
-    By default for DHCP sessions ``username=ifname``, for sessions start by unclassified packet (``start=UP``) ``username`` is client ip address.
+    By default for DHCP sessions ``username=ifname``, for sessions start by unclassified packet (``start=up``) ``username`` is client ip address.
 
     If ``username=ifname`` then interface name from which packet was arrived will be used as username.
 
@@ -181,7 +185,7 @@ Section IPoE contain many flexible customization.
 **local-net=x.x.x.x/mask**
     By default not defined.
     
-    Specifies networks from which packets will be treated as unclassified. Need only for ``start=UP``. You may specify multiple local-net options. For example:
+    Specifies networks from which packets will be treated as unclassified. Need only for ``start=up``. You may specify multiple local-net options. For example:
 
 .. code-block:: sh
 
