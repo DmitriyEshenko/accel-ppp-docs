@@ -320,6 +320,10 @@ Section IPoE contain many flexible customization.
 
     Per-interface weight=0 has special meaning as backup (fail-over) interface, f.e. it terminates session on any received weight.
 
-**interface=[re:]ifname[,shared=0|1][,mode=L2|L3][,start=dhcpv4|up][,ifcfg=0|1][,mtu=N][,range=сеть/маска][,relay=адрес][,giaddr=адрес]
-interface=[re:]name[,mode=L2|L3][,shared=0|1][,start=dhcpv4|up|auto]
-**
+**calling-sid=mac|ip**
+    By default ``calling-sid=mac``
+
+    Specifies value of Calling-Station-Id radius attribute.
+
+**interface=[re:]ifname[,shared=0|1][,mode=L2|L3][,start=dhcpv4|up|auto][,ifcfg=0|1][,mtu=N][,range=x.x.x.x/mask][,relay=ip address][,giaddr=ip address]**
+    
