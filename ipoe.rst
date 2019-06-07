@@ -174,19 +174,41 @@ Section IPoE contain many flexible customization.
 **attr-dhcp-client-ip=<attribute>**
     By default not defined.
 
-    Specified radius attribute which contains ip address for allocat to client. If set custom attribute then need add its in radius dictionary. For example:
+    Specified radius attribute which contains ip address for asign to client. Example with existing attribute:
+    
+.. code-block:: sh
+
+    attr-dhcp-client-ip=DHCP-Client-IP-Address
+
+.. admonition:: Note:
+
+    If set custom attribute then need add its for both (radius server and accel-ppp) dictionaries.
+    
+**attr-dhcp-router-ip=<attribute>**
+    By default not defined.
+
+    Specified radius attribute which contains router ip address for asign to client. Example with existing attribute:
     
 .. code-block:: sh
 
     attr-dhcp-client-ip=DHCP-Client-IP-Address
     
-**attr-dhcp-router-ip=<attribute>**
-    By default not defined.
+.. admonition:: Note:
 
+    If set custom attribute then need add its for both (radius server and accel-ppp) dictionaries.
 
 **attr-dhcp-mask=<attribute>**
     By default not defined.
 
+    Specified radius attribute which contains netmask (CIDR) for asign to client. Example with existing attribute:
+
+.. code-block:: sh
+
+    attr-dhcp-mask=DHCP-Mask
+
+.. admonition:: Note:
+
+    If set custom attribute then need add its for both (radius server and accel-ppp) dictionaries.
 
 **gw-ip-address=x.x.x.x/mask**
     By default not defined.
