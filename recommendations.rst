@@ -3,7 +3,7 @@ Recommendations
 
 Enable forwarding
 -----------------
-To enable packet forwarding need edit /etc/sysclt.conf and add or uncomment next:
+To enable packet forwarding need edit /etc/sysctl.conf and add or uncomment next:
 
 .. code-block:: sh
 
