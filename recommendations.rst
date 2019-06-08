@@ -1,6 +1,17 @@
 Recommendations
 ===============
 
+Enable forwarding
+-----------------
+To enable packet forwarding need edit /etc/sysclt.conf and add or uncomment next:
+
+.. code-block:: sh
+
+  net.ipv4.ip_forward=1
+  net.ipv6.conf.all.forwarding=1
+
+  For apply this params now, use command ``sysctl -p`` or after reboot server this params will be applied automatically.
+
 MTU
 ---
 
@@ -33,7 +44,7 @@ Set up MTU on interface eth0 and interface with S-VLAN
 Increase ARP cache size
 -----------------------------
 
-If accel-ppp used as DHCP BRAS important to increase ARP cache size. Edit /etc/sysctl.conf and add next:
+If accel-ppp used as DHCP BRAS important to increase ARP cache size, otherwise you can cache overflow and clients have lost connections. Edit /etc/sysctl.conf and add next:
 
 .. code-block:: sh
 
@@ -44,4 +55,4 @@ If accel-ppp used as DHCP BRAS important to increase ARP cache size. Edit /etc/s
   net.ipv6.neigh.default.gc_thresh2 = 8192
   net.ipv6.neigh.default.gc_thresh3 = 12288
 
-  And apply ``sysctl -p`` or after reboot server this params will be applied
+  For apply this params now, use command ``sysctl -p`` or after reboot server this params will be applied automatically.
