@@ -331,5 +331,5 @@ Section IPoE contain many flexible customization.
     
     * Need improve with arg 1 and 2.
 
-**interface=[re:]ifname[,shared=0|1][,mode=L2|L3][,start=dhcpv4|up|auto][,ifcfg=0|1][,mtu=N][,range=x.x.x.x/mask][,relay=ip address][,giaddr=ip address]**
-    
+**interface=[re:]name[,mode=L2|L3][,shared=0|1][,start=dhcpv4|up|auto][,range=x.x.x.x/mask][,ifcfg=0|1][,relay=x.x.x.x] [,giaddr=x.x.x.x][,src=x.x.x.x][,proxy-arp=0|1|2] [,username=ifname|lua:function] [,ipv6=0|1] [,mtu=N] [,weight=N]**
+    Specifies interface to listen dhcp or unclassified packets. You may specify multiple interface options.
