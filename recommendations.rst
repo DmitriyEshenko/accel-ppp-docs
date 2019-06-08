@@ -30,3 +30,18 @@ Set up MTU on interface eth0 and interface with S-VLAN
   ip link set eth0 mtu 1514
   ip link set eth0.2001 mtu 1514
  
+Increase ARP cache size
+-----------------------------
+
+If accel-ppp used as DHCP BRAS important to increase ARP cache size. Edit /etc/sysctl.conf and add next:
+
+.. code-block:: sh
+
+  net.ipv4.neigh.default.gc_thresh1 = 4096
+  net.ipv4.neigh.default.gc_thresh2 = 8192
+  net.ipv4.neigh.default.gc_thresh3 = 12288
+  net.ipv6.neigh.default.gc_thresh1 = 4096
+  net.ipv6.neigh.default.gc_thresh2 = 8192
+  net.ipv6.neigh.default.gc_thresh3 = 12288
+
+  And apply ``sysctl -p`` or after reboot server this params will be applied
