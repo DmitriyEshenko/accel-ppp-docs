@@ -9,8 +9,8 @@ To enable packet forwarding need edit /etc/sysclt.conf and add or uncomment next
 
   net.ipv4.ip_forward=1
   net.ipv6.conf.all.forwarding=1
-
-  For apply this params now, use command ``sysctl -p`` or after reboot server this params will be applied automatically.
+  
+For apply this params now, use command ``sysctl -p`` or after reboot server this params will be applied automatically.
 
 MTU
 ---
@@ -55,4 +55,4 @@ If accel-ppp used as DHCP BRAS important to increase ARP cache size, otherwise y
   net.ipv6.neigh.default.gc_thresh2 = 8192
   net.ipv6.neigh.default.gc_thresh3 = 12288
 
-  For apply this params now, use command ``sysctl -p`` or after reboot server this params will be applied automatically.
+For apply this params now, use command ``sysctl -p`` or after reboot server this params will be applied automatically.
