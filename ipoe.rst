@@ -313,7 +313,7 @@ Section IPoE contain many flexible customization.
     
     How it works:
     On reception of DHCPDISCOVER accel-ppp sends broadcast DHCP message to port 67 with same xid and add special vendor-specific option where encodes its current session count multipled by weight. On reception of such message accel-ppp searches session with same xid and compares weight. If received weight is less than session's weight then it terminates this session.
-    **May be used as per-interface**
+    May be used as per-interface.
 
 .. admonition:: Note:
 
@@ -330,13 +330,17 @@ Section IPoE contain many flexible customization.
     Parameter specifies whether accel-ppp should reply to arp requests. Also may defined per-interface.
     
     * Need improve with arg 1 and 2.
+**ip-unnumbered=0|1**
+    By default is enabled: ``ip-unnumbered=1``
+
+    Specifies should accel-ppp create route for session with netmask /32. May be used as per-interface.
 
 **interface=[re:]name**
     By default interface has many params which exaplain below.
     
     Specifies interface to listen dhcp or unclassified packets. If name is prefixed with **re:** then name is treated as **regular expression**.
     
-    You may specify multiple interface options, for example:
+    May be specify multiple interface options, for example:
 
 .. code-block:: sh
 
