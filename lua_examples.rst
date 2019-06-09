@@ -3,7 +3,7 @@
 Lua examples
 ============
 
-Important that accel-ppp was built with lua support ``cmake -DLUA=TRUE``or if system has more modern lua version, need this sets, for example ``cmake -DLUA=5.3``
+Important that accel-ppp was built with lua support ``cmake -DLUA=TRUE`` or if system has more modern lua version, need this sets, for example ``cmake -DLUA=5.3``
 
 Example accel-ppp configuration:
 
