@@ -23,6 +23,11 @@ Section IPoE contain many flexible customization.
 
     Writes more detailed logs.
 
+**ipv6=0|1**
+    By default is disabled: ``ipv6=0``
+
+    Activate support ipv6 globaly. * Note: write detail.
+
 **mode=L2|L3**
     By default mode is L2.
     
@@ -372,7 +377,7 @@ The ``mtu`` parameter specifies whether accel-ppp should change MTU(maximum tran
 
 The ``range`` parameter specifies local range of ip address to give to dhcp clients. First IP in range is router IP.
     
-The ``ifcfg`` parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured.
+The ``ifcfg`` parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured. By default inheris global ``ifcfg`` value.
     
 The ``relay`` parameter specifies DHCPv4 relay IP address to pass requests to. If specified giaddr is also needed.
 
@@ -382,3 +387,8 @@ The ``src`` parameter specifies ip address to use as source when adding route to
 
 The ``proxy-arp`` parameter specifies whether accel-ppp should reply to arp requests.
 
+``username=ifname|lua:function_name``
+
+``ipv6=0|1``
+
+``weight=n``
