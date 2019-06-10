@@ -99,7 +99,16 @@ Section IPoE contain many flexible customization.
     By default is disabled: ``unit-cache=0``
 
     Specifies number of interfaces to keep in cache. It means that don't destory interface after corresponding session is destoyed, instead place it to cache and use it later for new sessions repeatedly. Actial only if used shared interfaces.
+
+**ip-pool=<pool name>**
+    By default is not defined. 
     
+    Specifies ip pool name which accel-ppp will use for allocate client ip address.
+
+.. admonition:: Note:
+    
+    For use ippool need add this module to ``[modules]`` section, and sets params on section ``[ip-pool]``
+
 **vlan-mon=[re:]name[,filter]**
     vlan-mon needs for automatiicaly crate vlans interfaces, more often on vlan-per-user schemas. Support regular expression (**re:**). Parameter specifies list of vlans or ranges of vlans to monitor for and may be in following form: vlan-mon=eth1,2,5,10,20-30
     
