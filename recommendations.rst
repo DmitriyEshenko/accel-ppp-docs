@@ -40,7 +40,11 @@ Set up MTU on interface eth0 and interface with S-VLAN
 
   ip link set eth0 mtu 1514
   ip link set eth0.2001 mtu 1514
- 
+
+.. admonition:: Note:
+
+  If used ``bonding`` need change MTU on *bonding* (bond0) and *slaves* (eth0, eth1 ...) interfaces.
+
 Increase ARP cache size
 -----------------------------
 
