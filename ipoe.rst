@@ -344,8 +344,9 @@ Section IPoE contain many flexible customization.
 
 .. code-block:: sh
 
-     interface=eth0,mode=L3,start=UP,shared=1
-     interface=^eth1\.[0-9]+\.[0-9][0-9][0-9]$,mode=L2,shared=0,start=dhcpv4,mtu=1500,ifcfg=1
+    interface=eth0,mode=L3,start=UP,shared=1
+    interface=^eth1\.[0-9]+\.[0-9][0-9][0-9]$,mode=L2,shared=0,start=dhcpv4,mtu=1500,ifcfg=1
+
 
     The ``mode`` parameter specifies client connectivity mode. If mode= L2 then it means that clients are on same network where interface is. L3 means that client are behind some router.
     
