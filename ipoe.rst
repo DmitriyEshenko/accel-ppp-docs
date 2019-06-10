@@ -364,9 +364,9 @@ The ``start`` parameter specifies which way session starts.
 
     * ``dhcpv4`` - start by DHCP Discover packet.
     
-    * ``up`` - unclassified packet.
+    * ``up`` -  start by unclassified packet.
     
-    * ``auto`` - means automatically start session with username = interface name. Use it with conjunction vlan_mon.
+    * ``auto`` - means automatically start session with ``username=interface`` name. Use it with conjunction vlan_mon.
 
 The ``mtu`` parameter specifies whether accel-ppp should change MTU(maximum transmission unit) on interfaces. By default not set and MTU value inherited from root interface. Often used for vlan-per-user (QinQ).
 
