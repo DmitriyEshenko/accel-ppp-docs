@@ -348,7 +348,7 @@ Section IPoE contain many flexible customization.
     interface=^eth1\.[0-9]+\.[0-9][0-9][0-9]$,mode=L2,shared=0,start=dhcpv4,mtu=1500,ifcfg=1
 
 
-The ``mode`` parameter specifies client connectivity mode. If mode= L2 then it means that clients are on same network where interface is. L3 means that client are behind some router.
+    The ``mode`` parameter specifies client connectivity mode. If ``mode=L2`` then it means that clients are on same network where interface is. ``mode=L3`` means that client are behind some router.
     
 The ``shared`` parameter specifies where interface is shared by multiple users or it is vlan-per-user.
     
