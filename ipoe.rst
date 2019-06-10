@@ -360,7 +360,14 @@ The ``mode`` parameter specifies client connectivity mode. If ``mode=L2`` then i
     
 The ``shared`` parameter specifies where interface is shared by multiple users or it is vlan-per-user.
     
-The ``start`` parameter specifies which way session starts (up - unclassified packet). ``auto`` - means automatically start session with username = interface name. Use it with conjunction vlan_mon.
+The ``start`` parameter specifies which way session starts.
+    * ``dhcpv4`` - start by DHCP Discover packet.
+    
+    * ``up`` - unclassified packet.
+    
+    * ``auto`` - means automatically start session with username = interface name. Use it with conjunction vlan_mon.
+
+The ``mtu`` parameter specifies whether accel-ppp should change MTU(maximum transmission unit) on interfaces. By default not set and MTU value inherited from root interface. Often used for vlan-per-user (QinQ).
 
 The ``range`` parameter specifies local range of ip address to give to dhcp clients. First IP in range is router IP.
     
@@ -373,3 +380,4 @@ The ``giaddr`` parameter specifies relay agent IP address.
 The ``src`` parameter specifies ip address to use as source when adding route to client.
 
 The ``proxy-arp`` parameter specifies whether accel-ppp should reply to arp requests.
+
