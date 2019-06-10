@@ -361,6 +361,7 @@ The ``mode`` parameter specifies client connectivity mode. If ``mode=L2`` then i
 The ``shared`` parameter specifies where interface is shared by multiple users or it is vlan-per-user.
     
 The ``start`` parameter specifies which way session starts.
+
     * ``dhcpv4`` - start by DHCP Discover packet.
     
     * ``up`` - unclassified packet.
