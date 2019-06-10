@@ -347,3 +347,20 @@ Section IPoE contain many flexible customization.
      interface=eth0,mode=L3,start=UP,shared=1
      interface=^eth1\.[0-9]+\.[0-9][0-9][0-9]$,mode=L2,shared=0,start=dhcpv4,mtu=1500,ifcfg=1
 
+    The ``mode`` parameter specifies client connectivity mode. If mode= L2 then it means that clients are on same network where interface is. L3 means that client are behind some router.
+    
+    The ``shared`` parameter specifies where interface is shared by multiple users or it is vlan-per-user.
+    
+    The ``start`` parameter specifies which way session starts (up - unclassified packet). ``auto`` - means automatically start session with username = interface name. Use it with conjunction vlan_mon.
+
+    The ``range`` parameter specifies local range of ip address to give to dhcp clients. First IP in range is router IP.
+    
+    The ``ifcfg`` parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured.
+    
+    The ``relay`` parameter specifies DHCPv4 relay IP address to pass requests to. If specified giaddr is also needed.
+
+    The ``giaddr`` parameter specifies relay agent IP address.
+
+    The ``src`` parameter specifies ip address to use as source when adding route to client.
+
+    The ``proxy-arp`` parameter specifies whether accel-ppp should reply to arp requests.
