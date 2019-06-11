@@ -26,7 +26,7 @@ Section IPoE contain many flexible customization.
 **ipv6=0|1**
     By default is disabled: ``ipv6=0``
 
-    Activate support ipv6 globaly. * Note: write detail.
+    Activate support ipv6 globally. Also may defined per-interface. Required modules ``ipv6_nd``,``ipv6_dhcp`` and ``ipv6pool`` if ipv6 addresses will allocate accel-ppp.
 
 **mode=L2|L3**
     By default mode is L2.
@@ -361,11 +361,11 @@ Section IPoE contain many flexible customization.
     interface=eth0,mode=L3,start=UP,shared=1
     interface=^eth1\.[0-9]+\.[0-9][0-9][0-9]$,mode=L2,shared=0,start=dhcpv4,mtu=1500,ifcfg=1
 
-The ``mode`` parameter specifies client connectivity mode. If ``mode=L2`` then it means that clients are on same network where interface is. ``mode=L3`` means that client are behind some router.
+The ``mode=L2|L3`` parameter specifies client connectivity mode. If ``mode=L2`` then it means that clients are on same network where interface is. ``mode=L3`` means that client are behind some router.
     
-The ``shared`` parameter specifies where interface is shared by multiple users or it is vlan-per-user.
+The ``shared=0|1`` parameter specifies where interface is shared by multiple users or it is vlan-per-user.
     
-The ``start`` parameter specifies which way session starts.
+The ``start=dhcpv4|up|auto`` parameter specifies which way session starts.
 
     * ``dhcpv4`` - start by DHCP Discover packet.
     
@@ -373,22 +373,24 @@ The ``start`` parameter specifies which way session starts.
     
     * ``auto`` - means automatically start session with ``username=interface`` name. Use it with conjunction vlan_mon.
 
-The ``mtu`` parameter specifies whether accel-ppp should change MTU(maximum transmission unit) on interfaces. By default not set and MTU value inherited from root interface. Often used for vlan-per-user (QinQ).
+The ``ipv6``
 
-The ``range`` parameter specifies local range of ip address to give to dhcp clients. First IP in range is router IP.
+The ``mtu=n`` parameter specifies whether accel-ppp should change MTU(maximum transmission unit) on interfaces. By default not set and MTU value inherited from root interface. Often used for vlan-per-user (QinQ).
+
+The ``range=x.x.x.x/mask`` parameter specifies local range of ip address to give to dhcp clients. First IP in range is router IP. If you need more customization use ``ip-pool`` instead of ``range``.
     
-The ``ifcfg`` parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured. By default inheris global ``ifcfg`` value.
+The ``ifcfg=0|1`` parameter specifies whether accel-ppp should add router IP address and route to client to interface or it is explicitly configured. By default inheris global ``ifcfg`` value.
     
-The ``relay`` parameter specifies DHCPv4 relay IP address to pass requests to. If specified giaddr is also needed.
+The ``relay=x.x.x.x`` parameter specifies DHCPv4 relay IP address to pass requests to. If specified giaddr is also needed.
 
-The ``giaddr`` parameter specifies relay agent IP address.
+The ``giaddr=x.x.x.x`` parameter specifies relay agent IP address.
 
-The ``src`` parameter specifies ip address to use as source when adding route to client.
+The ``src=x.x.x.x`` parameter specifies ip address to use as source when adding route to client.
 
-The ``proxy-arp`` parameter specifies whether accel-ppp should reply to arp requests.
+The ``proxy-arp=0|1|2`` parameter specifies whether accel-ppp should reply to arp requests.
 
-``username=ifname|lua:function_name``
+The ``username=ifname|lua:function_name`` allow set custom LUA function to form username from packet header information. Often used this param on varius BRAS connection type.
 
-``ipv6=0|1``
+``ipv6=0|1`` will activate support ipv6 on interface. If not defined, inherit global params.
 
 ``weight=n``
