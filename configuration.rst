@@ -24,6 +24,7 @@ Configuration file consists of sections in form:
     modules.rst
     core.rst
     radius.rst
+    ppp.rst
     pppoe.rst
     pptp.rst
     l2tp.rst
