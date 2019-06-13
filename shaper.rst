@@ -49,6 +49,15 @@ Accel-ppp support many ways customisation rate-limit. Also limiting clients band
 
   Specifies r2q parameter of root htb qdisc. **(Need explain details)**
 
+**quantum=n**
+  By default is ``quantum=1500``
+
+  Specifies quantum parameter of htb classes. **(Need explain details)**
+
+**moderate-quantum=1|0**
+  By default is disabled ``moderate-quantum=0`
+
+  If fixed quantum is not specified and this option is specified then shaper module will check for quantum value is valid (in range 1000-200000).
 
 
 Examples
