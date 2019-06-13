@@ -1,7 +1,7 @@
 [ppp]
 ======
 
-The Point-to-Point Protocol (PPP) [1] provides a standard method for transporting multi-protocol datagrams over point-to-point links.  PPP also defines an extensible Link Control Protocol.
+The Point-to-Point Protocol (PPP) provides a standard method for transporting multi-protocol datagrams over point-to-point links.  PPP also defines an extensible Link Control Protocol.
 Section ``[ppp]`` consist common ppp prams for PPPoE/PPtP/L2TP/SSTP.
 
 **verbose=0|1**
