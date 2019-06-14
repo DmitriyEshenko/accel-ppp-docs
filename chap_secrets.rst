@@ -1,7 +1,7 @@
 [chap-secrets]
 ==============
 
-Currently *accel-ppp* may works only with one of the authentication method, chap-secrets or RADIUS. RADIUS has more priority if set in ``[modules]`` section. Reomve or *#comment* ``radius`` from section ``[modules]`` if you want use``chap-secrets``. Example:
+*Chap-secret* is the module of authentication which works with user authentication data and other data (username, password, ip address, speed etc.) stored as local file. Currently *accel-ppp* may works only with one of the authentication method, chap-secrets or RADIUS. RADIUS has more priority if set in ``[modules]`` section. Reomve or *#comment* ``radius`` from section ``[modules]`` if you want use ``chap-secrets``. Example:
 
 .. code-block:: sh
 
