@@ -59,6 +59,38 @@ Accel-ppp support many ways customisation rate-limit. Also limiting clients band
 
   If fixed quantum is not specified and this option is specified then shaper module will check for quantum value is valid (in range 1000-200000).
 
+**fwmark=n**
+  By default is disabled: ``fwmark=0``
+
+  Specifies the fwmark for traffic that won't be passed through shaper.
+
+**up-limiter=police|htb**
+  By default is: ``up-limiter=police``
+
+  Specifes upstream rate limiting method.
+
+**down-limiter=tbf|htb**
+  By default is: ``down-limiter=tbf``
+
+  Specifies downstream rate limiting method.
+
+**leaf-qdisc=qdisc parameters**
+  By default is not defined:
+
+  In case if htb is used as up-limiter or down-limiter specified leaf qdisc can be attached automaticaly. At present sfq and 
+
+**fq_codel qdiscs**
+  
+  Parameters are same as for tc: ``sfq [ limit NUMBER ] [ perturn SECS ] [ quantum BYTES ] ``
+
+  ``fq_codel [ limit PACKETS ] [flows NUMBER ] [ target TIME ] [ interval TIME ] [quantum BYTES ] [ [no]ecn ]``
+  
+**rate-multiplier=n**
+  By default is ``rate-multiplier=1``
+
+  Due to accel-ppp operates with rates in kilobit basis if you send rates in different basis then you can use this option to bring your values to kilobits. **(Need explain details)**
+ 
+
 
 Examples
 --------
