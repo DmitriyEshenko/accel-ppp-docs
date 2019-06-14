@@ -11,3 +11,13 @@
 
 Configuration
 -------------
+
+
+Chap-secrets file example
+-------------------------
+
+.. code-block:: sh
+
+    #client     server      secret 	    ip-address 	    speed
+    user001	    *	        password1	100.64.100.1	20240/10240
+    user002     *	        passowrd2	*	            10240/10240
