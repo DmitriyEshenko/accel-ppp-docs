@@ -19,6 +19,25 @@ Accel-ppp support many ways customisation rate-limit. Also limiting clients band
 
   Specifies which radius attribute contains rate information for **downstream**. Often used if needs separate *upstream* and *downstream* attributes.
 
+**vendor=name**
+  By default is not defined.
+
+  Specifies vendor name for works for support other vendor attributes like *Cisco-AVPair* or *Mikrotik*.
+  
+  Example for Cisco:
+  
+.. code-block:: sh
+ 
+  vendor=Cisco
+  attr=Cisco-AVPair
+
+  Example for Mikrotik:
+
+.. code-block:: sh
+ 
+  vendor=Mikrotik
+  attr=Mikrotik-Rate-Limit
+  
 **burst-factor=n**
   By default is not defined.
   
@@ -33,6 +52,11 @@ Accel-ppp support many ways customisation rate-limit. Also limiting clients band
   By default is ``down-burst-factor=0.1``
 
   Specifies burst factor for **downstream**.
+
+**cburst=n**
+  By default is ``cburst=1534``
+
+  Specifies amount of bytes that can be burst at 'infinite' speed. Recommendation: cburst should be equal to at most one average packet 
 
 **latency=n**
   By default is ``latency=0.05``
@@ -74,6 +98,11 @@ Accel-ppp support many ways customisation rate-limit. Also limiting clients band
 
   Specifies downstream rate limiting method.
 
+**ifb=ifb_ifname**
+  By default ``ifb=ifb0``
+  
+  Specifies name of ifb interface, used only for ``up-limiter=htb``
+  
 **leaf-qdisc=qdisc parameters**
   By default is not defined:
 
