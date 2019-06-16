@@ -24,14 +24,14 @@ Accel-ppp support many ways customisation rate-limit. Also limiting clients band
 
   Specifies vendor name for works for support other vendor attributes like *Cisco-AVPair* or *Mikrotik*.
   
-  Example for Cisco:
+Example for Cisco:
   
 .. code-block:: sh
  
   vendor=Cisco
   attr=Cisco-AVPair
 
-  Example for Mikrotik:
+Example for Mikrotik:
 
 .. code-block:: sh
  
