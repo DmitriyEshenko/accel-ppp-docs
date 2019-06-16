@@ -35,6 +35,9 @@ Object **pkt** has next functions:
 **ifname()**
   Will return interface name which received packet.
 
+**ipaddr**
+  Will return client ip address exist in packet header.
+  
 **options()**
   Will return table which contains number of DHCP option in received packet.
 
