@@ -22,7 +22,7 @@ Accel-ppp support many ways customisation rate-limit. Also limiting clients band
 **vendor=name**
   By default is not defined.
 
-  Specifies vendor name for works for support other vendor attributes like *Cisco-AVPair* or *Mikrotik*.
+    Specifies vendor name  for support attributes of other vendors like *Cisco-AVPair* or *Mikrotik*.
   
 Example for Cisco:
   
