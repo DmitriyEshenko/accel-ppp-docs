@@ -108,7 +108,7 @@ Example for Mikrotik:
 
   In case if htb is used as up-limiter or down-limiter specified leaf qdisc can be attached automaticaly. At present *sfq* and *fq_codel qdiscs* are implemented. *CoDel* (the name comes from "controlled delay") is Active Queue Manager. Parameters are same as for tc: 
   
-  ``sfq [limit NUMBER] [perturn SECS] [quantum BYTES]``
+  ``sfq [limit NUMBER] [perturb SECS] [quantum BYTES]``
 
   ``fq_codel [limit PACKETS] [flows NUMBER] [target TIME] [interval TIME] [quantum BYTES] [[no]ecn]``
   
