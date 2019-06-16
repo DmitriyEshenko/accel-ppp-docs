@@ -4,6 +4,9 @@
 ========
 Accel-ppp support many ways customisation rate-limit. Also limiting clients bandwidths sometimes called as QoS (Quality of Service), but QoS has more possibilities. For enable rate-liniter, we can sets ``shaper`` in section ``[modules]``.
 
+Config overview
+---------------
+
 **attr=name**
   By default: ``attr=Filter-Id``.
   
@@ -125,7 +128,7 @@ Examples
 Fiter-Id
 ^^^^^^^^
 
-Cisco AV-pairs
+Cisco AVPair
 ^^^^^^^^^^^^^^
 
 Mikrotik
