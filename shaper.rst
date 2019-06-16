@@ -64,22 +64,22 @@ Example for Mikrotik:
 **latency=n**
   By default is ``latency=0.05``
 
-  Specifies latency (in milliseconds) parameter of tbf qdisc. **(Need explain datails)**
+  Specifies latency (in milliseconds) parameter of tbf qdisc which set maximum amount of time a packet can sit in the TBF.
 
 **mpu=n**
   By default is ``mpu=0``
 
-  Specifies mpu parameter of tbf qdisc and policer. **(Need explain datails)**
+  Specifies mpu parameter in bytes of tbf qdisc and policer. Determines the minimal token usage for a packet.
 
 **r2q=n**
   By default is ``r2q=10``
 
-  Specifies r2q parameter of root htb qdisc. **(Need explain details)**
+  Specifies r2q parameter of root htb qdisc.
 
 **quantum=n**
   By default is ``quantum=1500``
 
-  Specifies quantum parameter of htb classes. **(Need explain details)**
+  Specifies quantum parameter of htb classes. Amount of bytes a flow is allowed to dequeue before the scheduler moves to the next class.
 
 **moderate-quantum=1|0**
   By default is disabled ``moderate-quantum=0`
