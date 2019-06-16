@@ -115,7 +115,7 @@ Example for Mikrotik:
 **rate-multiplier=n**
   By default is ``rate-multiplier=1``
 
-  Due to accel-ppp operates with rates in kilobit basis if you send rates in different basis then you can use this option to bring your values to kilobits. **(Need explain details)**
+  Due to accel-ppp operates with rates in kilobit basis if you send rates in different basis then you can use this option to bring your values to kilobits. For ``vendor=Mikrotik`` often sets ``rate-multiplier=0.001``
  
 
 
