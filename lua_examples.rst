@@ -55,7 +55,7 @@ Object **pkt** has next functions:
     All function return type ``string``, except for ``options()``
 
 Also to accel-ppp includes packet **lpack** for disassemble binary data.
-It add to object ``string`` aditional function ``unpack(binary, fmt)``, where ``binary`` is string which contain binary data, and ``fmt``is data format. To ``fmt`` may be sets next data types:
+It add to object ``string`` aditional function ``unpack(binary, fmt)``, where ``binary`` is string which contain binary data, and ``fmt`` is data format. To ``fmt`` may be sets next data types:
 
 **z** - zero terminated string
 
