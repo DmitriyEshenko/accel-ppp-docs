@@ -47,7 +47,7 @@ Section IPoE contain many flexible customization.
     Also may defined per-interface.
 
 **lua-file=/path/to/file.lua**
-     By default not defined.
+     By default is not defined.
      
      Needs only if used lua functions for create username from packet header information. Often used with DHCP Option 82. Look :ref:`lua_examples` for more information.
 
@@ -172,7 +172,7 @@ Section IPoE contain many flexible customization.
      Specifies number of table. If L4-Redirect radius attribute is received and it's value is not 0 or '0' then accel-ppp will add following rule: ip rule add from <client_ip> table
 
 **l4-redirect-ipset=<name>**
-    By default not defined.
+    By default is not defined.
      
      Specifies name of ipset list. If L4-Redirect radius attribute is received and it's value is not 0 or '0' then accel-ppp will add client's ip to that ipset name.
 
@@ -182,17 +182,17 @@ Section IPoE contain many flexible customization.
     Specified time in seconds for creating temporary sessions if radius rejects access and  'ip rule add from ip_addr table l4-redirect-table' rule will be created.
 
 **l4-redirect-ip-pool=<pool name>**
-    By default not defined.
+    By default is not defined.
 
     Allocates ip address from specified pool name if radius rejects access. Pool must be sets in section `[ippool]`
 
 **agent-remote-id=<identifier>**
-    By default not defined.
+    By default is not defined.
 
     If accel-ppp used as DHCP relay, than to DHCP requests will inserted Option 82 with agent-remote-id and agent-circuit-id with interface name from which received client request.
 
 **local-net=x.x.x.x/mask**
-    By default not defined.
+    By default is not defined.
     
     Specifies networks from which packets will be treated as unclassified. Need only for ``start=up``. You may specify multiple local-net options. For example:
 
@@ -203,7 +203,7 @@ Section IPoE contain many flexible customization.
     local-net=172.16.0.0/24
 
 **attr-dhcp-client-ip=<attribute>**
-    By default not defined.
+    By default is not defined.
 
     Specified radius attribute which contains ip address for asign to client. Example with existing attribute:
     
@@ -216,7 +216,7 @@ Section IPoE contain many flexible customization.
     If set custom attribute then need add its for both (radius server and accel-ppp) dictionaries.
     
 **attr-dhcp-router-ip=<attribute>**
-    By default not defined.
+    By default is not defined.
 
     Specified radius attribute which contains router ip address for asign to client. Example with existing attribute:
     
@@ -229,7 +229,7 @@ Section IPoE contain many flexible customization.
     If set custom attribute then need add its for both (radius server and accel-ppp) dictionaries.
 
 **attr-dhcp-mask=<attribute>**
-    By default not defined.
+    By default is not defined.
 
     Specified radius attribute which contains netmask (CIDR) for asign to client. Example with existing attribute:
 
@@ -242,17 +242,17 @@ Section IPoE contain many flexible customization.
     If set custom attribute then need add its for both (radius server and accel-ppp) dictionaries.
 
 **attr-dhcp-lease-time=<attribute>**
-    By default not defined.
+    By default is not defined.
 
     Specified radius attribute which contains lease time in seconds to be sent to DHCP client. This attribute has priority and may redefine value which sets in ``lease-time`` sets globally.
 
 **attr-dhcp-renew-time=<attribute>**
-    By default not defined.
+    By default is not defined.
     
     Specified radius attribute which contains lease renew time (option 58) in seconds to be sent to DHCP client. This attribute has priority and may redefine value which sets in ``renew-time`` sets globally.
 
 **gw-ip-address=x.x.x.x/mask**
-    By default not defined.
+    By default is not defined.
     
     Specifies address to be used as server ip address if radius can assign only client address. In such case if client address is matched network and mask then specified address and mask will be used. You can specify multiple such options.
     For example:
@@ -264,7 +264,7 @@ Section IPoE contain many flexible customization.
     gw-ip-address=172.16.0.0/24
 
 **attr-dhcp-opt82=<attribute>**
-    By default not defined.
+    By default is not defined.
 
     Specifies radius attribute which will contain option 82 from DHCP packet header in binary and send to radius server.
     Example:
@@ -285,7 +285,7 @@ Section IPoE contain many flexible customization.
     
 
 **attr-dhcp-opt82-remote-id=<attribute>**
-    By default not defined.
+    By default is not defined.
 
     Specifies radius attribute which will contain only **Agent Remote Id** from DHCP packet header and send to radius server. Example with existing attribute in dictionary:
 
@@ -294,7 +294,7 @@ Section IPoE contain many flexible customization.
     attr-dhcp-opt82-remote-id=DHCP-Agent-Remote-Id
 
 **attr-dhcp-opt82-circuit-id=<attribute>**
-    By default not defined.
+    By default is not defined.
     
     Specifies radius attribute which will contain only **Agent Circuit Id** from DHCP packet header and send to radius server. Example with existing attribute in dictionary:
 
@@ -308,7 +308,7 @@ Section IPoE contain many flexible customization.
     Specified time in seconds which accel-ppp wait DHCP request  from client. If client don't send DHCP request for this time, accel-ppp terminate session.
     
 **offer-delay=delay[,delay1:count1[,delay2:count2[,...]]]**
-    By default not defined.
+    By default is not defined.
     
     One of load balancing mechanism. specifies delays in milliseconds (also in condition of connection count) to send DHCPOFFER . Last delay in list may be -1 which means don't accept new connections. List must to be sorted by count key. Example:
 
