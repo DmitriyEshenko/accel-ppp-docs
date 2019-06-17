@@ -26,7 +26,7 @@ Section IPoE contain many flexible customization.
 **ipv6=0|1**
     By default is disabled: ``ipv6=0``
 
-    Activate support ipv6 globally. Also may defined per-interface. Required modules ``ipv6_nd``,``ipv6_dhcp`` and ``ipv6pool`` if ipv6 addresses will allocate accel-ppp.
+    Activate support ipv6 globally. Also may defined per-interface. Required modules ``ipv6_nd``, ``ipv6_dhcp`` and  ``ipv6pool`` if ipv6 addresses will allocate accel-ppp.
 
 **mode=L2|L3**
     By default mode is L2.
