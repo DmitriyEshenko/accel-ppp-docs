@@ -35,7 +35,7 @@ Object **pkt** has next functions:
 **ifname()**
   Will return interface name which received packet.
 
-**ipaddr**
+**ipaddr()**
   Will return client ip address exist in packet header.
   
 **options()**
