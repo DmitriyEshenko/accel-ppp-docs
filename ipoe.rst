@@ -184,7 +184,7 @@ Section IPoE contain many flexible customization.
 **l4-redirect-ip-pool=<pool name>**
     By default is not defined.
 
-    Allocates ip address from specified pool name if radius rejects access. Pool must be sets in section `[ippool]`
+    Allocates ip address from specified pool name if radius rejects access. Pool must be sets in section `[ip-pool]`
 
 **agent-remote-id=<identifier>**
     By default is not defined.
