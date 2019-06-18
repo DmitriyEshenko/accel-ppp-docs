@@ -107,7 +107,7 @@ Example for Mikrotik:
   Specifies name of ifb interface, used only for ``up-limiter=htb``
   
 **leaf-qdisc=qdisc parameters**
-  By default is not defined:
+  By default is not defined.
 
   In case if htb is used as up-limiter or down-limiter specified leaf qdisc can be attached automaticaly. At present *sfq* and *fq_codel qdiscs* are implemented. *CoDel* (the name comes from "controlled delay") is Active Queue Manager. Parameters are same as for tc: 
   
@@ -120,7 +120,10 @@ Example for Mikrotik:
 
   Due to accel-ppp operates with rates in kilobit basis if you send rates in different basis then you can use this option to bring your values to kilobits. For ``vendor=Mikrotik`` often sets ``rate-multiplier=0.001``
  
+**time-range=range_id,time_start-time_end**
+  By default is not defined.
 
+  Specifies time ranges for automatic rate reconfiguration. You can specify multiple such options. Look examples below.
 
 Examples
 --------
