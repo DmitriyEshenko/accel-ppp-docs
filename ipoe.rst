@@ -181,7 +181,7 @@ Section IPoE contain many flexible customization.
 
     Specified time in seconds for creating temporary sessions if radius rejects access and  'ip rule add from ip_addr table l4-redirect-table' rule will be created.
 
-**l4-redirect-ip-pool=<pool name>**
+**l4-redirect-ip-pool=pool_name**
     By default is not defined.
 
     Allocates ip address from specified pool name if radius rejects access. Pool must be sets in section `[ip-pool]`
