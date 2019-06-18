@@ -105,7 +105,7 @@ Section IPoE contain many flexible customization.
 
     Specifies number of interfaces to keep in cache. It means that don't destory interface after corresponding session is destoyed, instead place it to cache and use it later for new sessions repeatedly. Actial only if used shared interfaces.
 
-**ip-pool=<pool name>**
+**ip-pool=pool_name**
     By default is not defined. 
     
     Specifies ip pool name which accel-ppp will use for allocate client ip address.
