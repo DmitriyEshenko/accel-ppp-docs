@@ -46,7 +46,7 @@ Section ``[ppp]`` consist common ppp prams for PPPoE/PPtP/L2TP/SSTP.
 **ccp=n**
   By default is enabled: ``ccp=1``
 
-  For disable CCP(*Compression Control Protocol*) negotiation set ``ccp=0``
+  For disable CCP (*Compression Control Protocol*) negotiation set ``ccp=0``
 
 **ccp-max-configure=n**
   By default is: ``ccp-max-configure=3``
