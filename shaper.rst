@@ -82,7 +82,7 @@ Example for Mikrotik:
   Specifies quantum parameter of htb classes. Amount of bytes a flow is allowed to dequeue before the scheduler moves to the next class.
 
 **moderate-quantum=1|0**
-  By default is disabled `moderate-quantum=0``
+  By default is disabled ``moderate-quantum=0``
 
   If fixed quantum is not specified and this option is specified then shaper module will check for quantum value is valid (in range 1000-200000).
 
