@@ -32,3 +32,4 @@ Configuration file consists of sections in form:
     ipoe.rst
     sstp.rst
     shaper.rst
+    log.rst
