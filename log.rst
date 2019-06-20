@@ -1,8 +1,12 @@
 [log]
 =====
 
+Configuration of log and log_file modules.
 
+**log-file=path_to_file**
+ By default not defined. Required if used ``[modules]log_file``
 
+ Path to file to write general log.
 
 
 
