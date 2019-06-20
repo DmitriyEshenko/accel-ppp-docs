@@ -26,8 +26,6 @@ For rotation logs can be used system logrotate utility. Needs create file ``/etc
 
 .. admonition:: Note:
 
-  For correct work *logrotate* utility, need ``accel-pppd`` will run with ``-p /var/run/accel-pppd.pid`` arg.
+  For correct work *logrotate* utility need run ``accel-pppd`` daemon with ``-p /var/run/accel-pppd.pid`` argument.
   
-.. admonition:: Warn:
-
-  If accel-ppp run with gdb (GNU debugger) for find bugs, you need disable logs rotation, because it will makes to daemon crash.
+.. Caution:: If accel-ppp run with gdb (GNU debugger) for find bugs, you need disable logs rotation, because it will makes to daemon crash.
