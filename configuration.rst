@@ -33,3 +33,4 @@ Configuration file consists of sections in form:
     sstp.rst
     shaper.rst
     log.rst
+    pppd_compat.rst
