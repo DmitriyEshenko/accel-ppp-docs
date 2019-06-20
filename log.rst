@@ -3,6 +3,9 @@
 
 Configuration of log and log_file modules.
 
+Config overview
+^^^^^^^^^^^^^^^
+
 **log-file=/path/to/file**
  By default not defined. Required if used ``[modules]log_file``
 
