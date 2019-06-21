@@ -48,3 +48,5 @@ Chap-secrets file example
     #client     server      secret      ip-address      speed
     user001     *           password1	100.64.100.1	20240/10240
     user002     *           passowrd2	*               10240/10240
+
+The first column consist username, the second column - server ip address, if set asterisk, then gateway for client will allocate from ``[chap-secrets]gw-ip-address``, the third column is secret or password. The fourth column may consist alocated ip address or pool name which configured in ``[ip-pool]`` section. The fifth column consist rate-limit.
