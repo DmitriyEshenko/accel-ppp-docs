@@ -12,6 +12,33 @@
 Configuration
 -------------
 
+**chap-secrets=/path/to/file**
+    By default is ``chap-secrets=/etc/ppp/chap-secrets``
+    
+    Specifies alternate chap-secrets file location.
+
+**username-hash=hash1[,hash2]**
+    By default is not defined.
+
+    Specifies hash chain to calculate username hash. hash1, hash2 are openssl known digest names (md5, sha1, etc).
+    For example, ``username-hash=md5,sha1`` means hash username through md5 and then binary result hash through sha1.
+    Username have to be specified as hexadecimal dump of digest result.Password field have to be encrypted using smbencrypt (NT Hash part).
+
+**encrypted=0|1**
+    By default is disabled: ``encrypted=0``
+
+    Specifies either chap-secrets is encrypted.
+
+.. admonition:: Note:
+
+    Encryption is incompatible with auth_chap_md5 module.
+    
+    To enable chap-secrets encryption ablity accel-ppp must be compiled with -DCRYPTO=OPENSSL (which is default).
+
+**gw-ip-address=x.x.x.x[/mask]**
+    By default is not defined.
+
+    Specifies address to use as local address of ppp interfaces if chap-secrets is used for IP address assignment. Mask is used for IPoE.
 
 Chap-secrets file example
 -------------------------
