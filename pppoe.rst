@@ -19,7 +19,7 @@ Configuration of PPPoE module.
   Specifies interface name to listen/send discovery packets. May be specify multiple interface options. If *ifname* is prefixed with ``re:`` then *ifname* is considered as regular expression. Optional padi-limit parameter specifies limit of PADI packets to reply on this interface in 1 second period.
 
 **ac-name=ac-name**
-   By default is ``ac-name=accel-ppp`` 
+  By default is ``ac-name=accel-ppp`` 
 
   ``Need fix: ìmportant check it`` Specifies AC-Name tag value. If absent tag will not be sent.
 
