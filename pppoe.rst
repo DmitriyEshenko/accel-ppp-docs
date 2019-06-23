@@ -62,10 +62,13 @@ Configuration of PPPoE module.
 
 
 **ifname-in-sid**
+
 **sid-uppercase**
 
 **cookie-timeout**
 
 **ip-pool**
+
 **vlan-name**
+
 **vlan-timeout**
