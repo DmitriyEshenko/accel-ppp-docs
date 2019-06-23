@@ -45,3 +45,27 @@ Configuration of PPPoE module.
 * ``ifname`` - Called-Station-ID will contain name of interface accepted request. 
 * ``mac`` - Called-Station-ID will contain mac address of interface accepted request. 
 * ``ifname:mac`` - Called-Station-Id will contain both name and mac of interface.
+
+**tr101=0|1**
+  By default is enabled ``tr101=1``
+
+  Specifies whether to handle TR101 tags.
+
+**mppe=deny|allow|prefer|require**
+   By default is not defined.
+   
+   Default behavior - don’t ask client for mppe, but allow it if client wants.
+
+**ifname=ifname**
+
+  If this option is given ppp interface will be renamed using ifname as a template, i.e pppoe%d => pppoe0.
+
+
+**ifname-in-sid**
+**sid-uppercase**
+
+**cookie-timeout**
+
+**ip-pool**
+**vlan-name**
+**vlan-timeout**
