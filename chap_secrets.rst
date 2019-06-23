@@ -46,9 +46,11 @@ Chap-secrets file example
 .. code-block:: sh
 
     #client     server      secret      ip-address      speed
-    user001     *           password1	100.64.100.1	20240/10240
+    user001     *           password1	100.64.100.1	20480/10240
     user002     *           passowrd2	*               10240/10240
-    user003     *           passowrd3	ip_pool1        10240/10240
+    user003     *           passowrd3	ip_pool1        10240
+    eth0.101    *           eth0.101    ipoe_pool       20480
+    100.64.0.2  *           100.64.0.2  *               
     
 * The first column contain *username*.
 * The second column is only keep for support chap secrets files standard.
