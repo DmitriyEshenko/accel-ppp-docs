@@ -57,8 +57,9 @@ Configuration of PPPoE module.
    Default behavior - don’t ask client for mppe, but allow it if client wants.
 
 **ifname=ifname**
+  By default is not defined.
 
-  If this option is given ppp interface will be renamed using ifname as a template, i.e pppoe%d => pppoe0.
+  If this option is given ppp interface will be renamed using ifname as a template, i.e ``ifname=pppoe%d`` => *pppoe0*.
 
 
 **ifname-in-sid**
