@@ -8,6 +8,7 @@
 **dictionary=/path/to/dictionary**
 
 **server=address,secret[,auth-port=1812][,acct-port=1813][,req-limit=0][,fail-timeout=0,max-fail=0,][,weight=1][,backup]**
+  By default is not defined.
 
   Specifies IP address, secret, ports of RADIUS server.
 
