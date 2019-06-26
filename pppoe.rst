@@ -87,5 +87,5 @@ Configuration of PPPoE module.
 
 * ``%N`` - number of vlan.
 
-* ``%P - number of vlan of parent interface.
+* ``%P`` - number of vlan of parent interface.
 
