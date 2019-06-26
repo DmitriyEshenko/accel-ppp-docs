@@ -41,7 +41,7 @@ Configuration of PPPoE module.
 **called-sid=ifname|mac|ifname:mac**
   By default is ``called-sid=mac``
 
-  Specifies how to represent Called-Station-ID. 
+  Specifies how to represent Called-Station-ID.
 * ``ifname`` - Called-Station-ID will contain name of interface accepted request. 
 * ``mac`` - Called-Station-ID will contain mac address of interface accepted request. 
 * ``ifname:mac`` - Called-Station-Id will contain both name and mac of interface.
@@ -70,6 +70,22 @@ Configuration of PPPoE module.
 
 **ip-pool**
 
-**vlan-name**
+**vlan-mon=[re:]name[,filter]**
+  vlan-mon needs for automatiicaly crate vlans interfaces. Support regular expression (re:). Parameter specifies list of vlans or ranges of vlans to monitor for and may be in following form: ``vlan-mon=eth1,2,5,10,20-30``
 
-**vlan-timeout**
+**vlan-timeout=n**
+  By default: ``vlan-timeout=60``.
+  
+  Specifies time on second of vlan inactivity before it will be removed.
+
+**vlan-name=pattern**
+  By default vlan-name=%I.%N
+  
+  Specifies pattern of vlan interface name. Pattern may contain following macros:
+
+* ``%I`` - name of patern interface.
+
+* ``%N`` - number of vlan.
+
+* ``%P - number of vlan of parent interface.
+
