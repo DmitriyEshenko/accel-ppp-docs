@@ -49,8 +49,8 @@
 
   Specifies timeout in seconds of accounting interim update, if request not received after this time , session will terminated. If ``acct-timeout=0`` then session keeps active.
   
-**sid_in_auth=0|1**
-  By default is not defined.
+**sid-in-auth=0|1**
+  By default is not defined. 
   
   Specifies should *accel-ppp* generate and send ``Acct-Session-Id`` on Access-Request packet. By default ``Acct-Session-Id`` sended on Accounting-Request packet.
   
