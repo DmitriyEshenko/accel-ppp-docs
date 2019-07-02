@@ -31,6 +31,8 @@ Configuration file consists of sections in form:
     l2tp.rst
     ipoe.rst
     sstp.rst
+    dns.rst
+    ipv6-dns.rst
     shaper.rst
     log.rst
     pppd_compat.rst
