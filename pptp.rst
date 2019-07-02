@@ -1,7 +1,7 @@
 [pptp]
 =======
 
-Configuration overview of PPtP module.
+Configuration overview of PPTP module.
 
 **verbose=0|1**
   By default is disabled.
