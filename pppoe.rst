@@ -61,6 +61,9 @@ Configuration of PPPoE module.
 
   If this option is given ppp interface will be renamed using ifname as a template, i.e ``ifname=pppoe%d`` => *pppoe0*.
 
+.. admonition:: Note:
+    
+  Also interface may renamed if RADIUS server send attribute ``NAS-Port-Id`` with custom name. Length this value not be more 16 characters.
 
 **ifname-in-sid=called-sid|calling-sid|both**
   By default is not defined.
