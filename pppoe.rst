@@ -62,13 +62,31 @@ Configuration of PPPoE module.
   If this option is given ppp interface will be renamed using ifname as a template, i.e ``ifname=pppoe%d`` => *pppoe0*.
 
 
-**ifname-in-sid**
+**ifname-in-sid=called-sid|calling-sid|both**
+  By default is not defined.
 
-**sid-uppercase**
+  Specifies that interface name should be present in Called-Station-ID or in Calling-Station-ID or in both attributes.
 
-**cookie-timeout**
+**sid-uppercase=0|1**
+  By default is lowercase ``sid-uppercase=0```
 
-**ip-pool**
+  Specifies in which case sen attribute ``Called-Station-ID`` and ``Calling-Station-ID``.
+  
+  Example: lowercase ``Calling-Station-Id "xx:xx:xx:xx:xx:xx"``, uppercase ``Calling-Station-Id "XX:XX:XX:XX:XX:XX"``
+
+**cookie-timeout=n**
+  By default ``cookie-timeout=5``
+
+  
+
+**ip-pool=pool_name**
+  By default is not defined.
+
+  Specifies ip pool name which accel-ppp will use for allocate client ip address.
+  
+.. admonition:: Note:
+    
+    For use ippool need add this module to ``[modules]`` section, and sets params on section ``[ip-pool]``
 
 **vlan-mon=[re:]name[,filter]**
   vlan-mon needs for automatiicaly crate vlans interfaces. Support regular expression (re:). Parameter specifies list of vlans or ranges of vlans to monitor for and may be in following form: ``vlan-mon=eth1,2,5,10,20-30``
