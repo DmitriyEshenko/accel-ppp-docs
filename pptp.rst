@@ -2,33 +2,42 @@
 =======
 
 Configuration overview of PPtP module.
+
 **verbose=0|1**
   By default is disabled.
 
   Specified will pptp module produce verbose logging.
 
 **bind=x.x.x.x**
+  By default bound on all ip address.
 
   If this option is given then pptp server will bind to specified IP address.
 
 **port=n**
+  By default ``port=1723``
 
   If this option is given then pptp server will bind to specified port.
 
 **echo-interval=n**
+  By default is disabled ``echo-interval=0``
 
   If this option is given and greater then zero then pptp module will send echo-request every n seconds.
 
 **echo-failure=n**
+  By default ``echo-failure=3``
 
   Specifies maximum number of echo-requests may be sent without valid echo-reply, if exceeds connection will be terminated.
 
 **timeout=n**
+  By default ``timeout=5``
 
-  Timeout waiting reply from client in seconds (default 5).
+  Timeout waiting reply from client in seconds.
 
 **mppe=deny|allow|prefer|require**
+  By default is not defined.
 
+  Default behavior - don’t ask client for mppe, but allow it if client wants.
+  
 **ifname=ifname**
   By default is not defined.
 
