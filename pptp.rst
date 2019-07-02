@@ -51,3 +51,12 @@ Configuration overview of PPtP module.
   By default ``ppp-max-mtu=1436``
 
   Set the maximun MTU value that can be negociated for PPP over PPTP sessions.
+
+**ip-pool=pool_name**
+  By default is not defined.
+
+  Specifies ip pool name which accel-ppp will use for allocate client ip address.
+  
+.. admonition:: Note:
+    
+    For use ippool need add this module to ``[modules]`` section, and sets params on section ``[ip-pool]``
