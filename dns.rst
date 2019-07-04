@@ -30,5 +30,5 @@ Also *accel-ppp* has very interesting way to allocate DNS addresses which sended
   +----+-------------------+-------------------------+----+-------------------------+
   | id | username          | attribute               | op | value                   |
   +----+-------------------+-------------------------+----+-------------------------+
-  |  1 | user              | MS-Primary-DNS-Server   | := | 100.64.254.254          |
-  |  2 | user              | MS-Secondary-DNS-Server | := | 192.168.254.254         |
+  |  3 | user              | MS-Primary-DNS-Server   | := | 100.64.254.254          |
+  |  4 | user              | MS-Secondary-DNS-Server | := | 192.168.254.254         |
