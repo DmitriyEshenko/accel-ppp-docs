@@ -15,7 +15,7 @@ Overview DNS section.
 
 .. admonition:: Note:
 
-    Params in this section may be applied with ``accel-cmd reload`` command, but for new connections.
+    Params in this section also may be applied with ``accel-cmd reload`` command, but for new connections.
 
 Also *accel-ppp* has very interesting way to allocate DNS addresses which sended RADIUS server. Recived RADIUS attributes is more prior than params in config. For *ppp* (pppoe, pptp, l2tp, sstp) connection type used attributes ``MS-Primary-DNS-Server``, ``MS-Secondary-DNS-Server``. For ipoe connection type need send attributes ``DHCP-Domain-Name-Server``
 
