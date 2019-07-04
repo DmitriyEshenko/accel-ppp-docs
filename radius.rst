@@ -68,5 +68,7 @@
 **default-realm=0|1**
   By default is disabed: ``default-realm=0``
 
+  Specifies should *accel-ppp* separate *@domain name* from *username*.
+
 CoA
 ^^^
