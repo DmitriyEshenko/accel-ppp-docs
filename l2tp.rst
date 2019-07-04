@@ -103,4 +103,4 @@ Overview configuration of L2TP module.
   
 .. admonition:: Note:
 
-    Also interface may renamed if RADIUS server send attribute NAS-Port-Id with custom name. Length this value not be more 16 characters.
+    Also interface may renamed if RADIUS server send attribute ``NAS-Port-Id with custom name. Length this value not be more 16 characters.
