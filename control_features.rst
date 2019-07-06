@@ -3,7 +3,7 @@ Control features
 
 Accel-ppp suppoort next features for control daemon and sessions:
 
-Available commands for `accel-cmd` and `telnet`. Also possible show this help message with one of commands `accel-cmd help` and `telnet 127.0.0.1 -p 2000` then run `help`.
+Available commands for `accel-cmd`` and `telnet`. Also possible show this help message with one of commands ``accel-cmd help`` and ``telnet 127.0.0.1 -p 2000`` then run ``help``.
 
 .. code-block:: sh
 
