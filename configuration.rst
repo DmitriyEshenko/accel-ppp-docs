@@ -35,4 +35,5 @@ Configuration file consists of sections in form:
     ipv6-dns.rst
     shaper.rst
     log.rst
+    cli.rst
     pppd_compat.rst
