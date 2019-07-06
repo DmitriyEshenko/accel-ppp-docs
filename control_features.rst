@@ -7,7 +7,7 @@ Accel-ppp suppoort next features for control daemon and sessions:
 
 	* ``telnet``
 	
-	* ``snmp```
+	* ``snmp``
 	
 	* ``RADIUS COA``
 	
