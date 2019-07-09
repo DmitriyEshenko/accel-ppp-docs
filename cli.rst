@@ -45,7 +45,7 @@ Configuration overview of the command line interface.
   * ``ifname`` - interface name
   * ``username`` - username
   * ``calling-sid`` - calling station identifier, for *PPPoE* and *IPoE start=dhcpv4* is client mac-address, for *PPTP*, *L2TP*, *SSTP* and *IPoE start=up* is client ip addres.
-  * ``called-sid`` - called station id
+  * ``called-sid`` - called station identifier,  for *PPPoE* and *IPoE start=dhcpv4* is server mac-address, for *PPTP*, *L2TP*, *SSTP* and *IPoE start=up* is server ip addres.
   * ``sid`` - session identifier
   * ``ip``  - client ip address
   * ``ip6`` - client ipv6 prefix
@@ -53,7 +53,7 @@ Configuration overview of the command line interface.
   * ``rate-limit`` - rate-limit, required param ``[modules]shaper``, otherwise this column not displayed.
   * ``type`` - session type, may contain next connection types: *ipoe*, **pppoe*, *pptp*, *l2tp*, *sstp*
   * ``comp`` - compression/ecnryption method
-  * ``state`` - state of session, may contain next states: 
+  * ``state`` - state of session, may contain next states: *start*, *active*, *finish*
   * ``uptime`` - human readable session uptime 
   * ``uptime-raw`` - session uptime in seconds
   * ``rx-bytes`` - human readable received bytes
