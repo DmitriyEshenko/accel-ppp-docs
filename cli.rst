@@ -42,24 +42,24 @@ Configuration overview of the command line interface.
 
   Defines the default set of columns to be displayed by the ``show sessions`` command. Invalid column names are silently discarded. All possible params:
   
-  * ``ifname``
-  * ``username``
-  * ``calling-sid``
-  * ``called-sid``
-  * ``sid``
-  * ``ip``
-  * ``ip6``
-  * ``ip6-dp``
-  * ``rate-limit``
-  * ``type``
-  * ``comp``
-  * ``state``
-  * ``uptime``
-  * ``uptime-raw``
-  * ``rx-bytes``
-  * ``tx-bytes``
-  * ``rx-bytes-raw``
-  * ``tx-bytes-raw``
-  * ``rx-pkts``
-  * ``tx-pkts``
-  * ``netns``
+  * ``ifname`` - interface name
+  * ``username`` - username
+  * ``calling-sid`` - calling station identifier, for *PPPoE* and *IPoE start=dhcpv4* is client mac-address, for *PPTP*, *L2TP*, *SSTP* and *IPoE start=up* is client ip addres.
+  * ``called-sid`` - called station id
+  * ``sid`` - session identifier
+  * ``ip``  - client ip address
+  * ``ip6`` - client ipv6 prefix
+  * ``ip6-dp`` - delegated ipv6 prefix for client
+  * ``rate-limit`` - rate-limit, required param ``[modules]shaper``, otherwise this column not displayed.
+  * ``type`` - session type, may contain next connection types: *ipoe*, **pppoe*, *pptp*, *l2tp*, *sstp*
+  * ``comp`` - compression/ecnryption method
+  * ``state`` - state of session, may contain next states: 
+  * ``uptime`` - human readable session uptime 
+  * ``uptime-raw`` - session uptime in seconds
+  * ``rx-bytes`` - human readable received bytes
+  * ``tx-bytes`` - human readable transmitted bytes
+  * ``rx-bytes-raw`` - received bytes
+  * ``tx-bytes-raw`` - transmitted bytes
+  * ``rx-pkts`` - received packets
+  * ``tx-pkts`` - transmitted packets
+  * ``netns`` - network namespace name
