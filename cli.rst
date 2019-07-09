@@ -42,24 +42,24 @@ Configuration overview of the command line interface.
 
   Defines the default set of columns to be displayed by the ``show sessions`` command. Invalid column names are silently discarded. All possible params:
   
-  * ifname
-  * username
-  * calling-sid
-  * called-sid
-  * sid 
-  * ip 
-  * ip6
-  * ip6-dp
-  * rate-limit
-  * type
-  * comp
-  * state
-  * uptime
-  * uptime-raw
-  * rx-bytes
-  * tx-bytes
-  * rx-bytes-raw
-  * tx-bytes-raw
-  * rx-pkts
-  * tx-pkts
-  * netns
+  * ``ifname``
+  * ``username``
+  * ``calling-sid``
+  * ``called-sid``
+  * ``sid``
+  * ``ip``
+  * ``ip6``
+  * ``ip6-dp``
+  * ``rate-limit``
+  * ``type``
+  * ``comp``
+  * ``state``
+  * ``uptime``
+  * ``uptime-raw``
+  * ``rx-bytes``
+  * ``tx-bytes``
+  * ``rx-bytes-raw``
+  * ``tx-bytes-raw``
+  * ``rx-pkts``
+  * ``tx-pkts``
+  * ``netns``
