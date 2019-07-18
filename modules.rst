@@ -13,7 +13,7 @@ Section [modules] containes list of modules to load
 * **l2tp** - L2TP controlling connection handling module.
 * **sstp** -  SSTP controlling connection handling module.
 * **auth_pap** - PAP authentication module.
-* **auth_chap** - CHAP (md5) authentication module.
+* **auth_chap_md5** - CHAP (md5) authentication module.
 * **auth_mschap_v1** -Microsoft CHAP (version 1) authentication module.
 * **auth_mschap_v2** - Microsoft CHAP (version 2) authentication module.
 * **radius** - RADIUS interaction module.
