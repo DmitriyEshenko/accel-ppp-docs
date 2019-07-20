@@ -80,7 +80,7 @@ Common available commands for ``accel-cmd`` and ``telnet``. Also possible show t
 accel-cmd
 ^^^^^^^^^
 
-This application is very powerful and often used if you have `cli` connection. Be default accel-ppp listen *TCP* port *2000*  for input/output with accel-cmd. However `telnet` has same functions, but `accel-cmd` is more comfortable, allow send command without enter in to another environment. Detail about cli you may ret at :ref:`cli_configuration` .Let's revise `accel-cmd` possible commands.
+This application is very powerful and often used if you have `cli` connection. Be default accel-ppp listen *TCP* port *2000*  for input/output with accel-cmd. However `telnet` has same functions, but `accel-cmd` is more comfortable, allow send command without enter in to another environment. Detail about cli you may read at :ref:`cli_configuration` .Let's revise `accel-cmd` possible commands.
 
   * `accel-cmd show stat` - one of more important command, allow display  *accel-ppp* daemon statistics and information about connections types and something counters such as RADIUS auth, acct summary and lost queries. Detail below:
 
