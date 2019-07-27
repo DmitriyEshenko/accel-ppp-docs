@@ -23,6 +23,7 @@ Configuration file consists of sections in form:
     
     modules.rst
     core.rst
+    common.rst
     radius.rst
     chap_secrets.rst
     ppp.rst
