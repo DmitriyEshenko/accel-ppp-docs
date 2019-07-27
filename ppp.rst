@@ -62,11 +62,6 @@ Section ``[ppp]`` consist common ppp prams for PPPoE/PPtP/L2TP/SSTP.
   By default is: ``check-ip=0``
 
   Specifies whether accel-ppp should check if IP already assigned to other ppp interface.
-  
-**single-session=replace|deny**
-  By default is not defined.
-
-  Specifies whether accel-ppp should control sessions count. If this option is absent session count control is turned off. If this option is ``replace`` then accel-ppp will terminate first session when second is authorized. If this option is ``deny`` then accel-ppp will deny second session authorization.
 
 **mppe=require|prefer|deny**
   Default behavior - don't ask client for mppe, but allow it if client wants.
