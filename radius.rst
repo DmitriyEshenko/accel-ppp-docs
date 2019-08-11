@@ -65,10 +65,10 @@
   
   Specifies IP address, port to bind and secret for Dynamic Authorization Extension server (DM/CoA).This *ip address* must exist on any server interface.
 
-**default-realm=0|1**
-  By default is disabed: ``default-realm=0``
+**default-realm=realm**
+  By default is disabed.
 
-  Specifies should *accel-ppp* separate *@domain name* from *username*.
+  Append specified realm to username. For example ``default-realm=example.com`` accel-ppp send to RADIUS server ``username@example.com``
 
 CoA
 ^^^
