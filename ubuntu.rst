@@ -20,7 +20,7 @@ After install dependencies, download accel-ppp source code with git client, tree
 
 .. code-block:: sh
 
-  git clone https://github.com/xebd/accel-ppp.git accel-ppp-code
+  git clone https://github.com/xebd/accel-ppp.git /opt/accel-ppp-code
 
 Create directory for build source code and go to this directory. 
 
