@@ -57,11 +57,6 @@ Section ``[ppp]`` consist common ppp prams for PPPoE/PPtP/L2TP/SSTP.
   By default is: ``sid-case=lower``
 
   Specifies in which case generate session identifier.
-  
-**check-ip=0|1**
-  By default is: ``check-ip=0``
-
-  Specifies whether accel-ppp should check if IP already assigned to other ppp interface.
 
 **mppe=require|prefer|deny**
   Default behavior - don't ask client for mppe, but allow it if client wants.
