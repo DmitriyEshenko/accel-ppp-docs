@@ -31,3 +31,8 @@ Contains common params for all connection types
   
   Specifies maximum sessions which server may processed 
  
+**check-ip=0|1**
+  By default is: ``check-ip=0``
+
+  Specifies whether accel-ppp should check if IP already assigned to other ppp interface.
+  
