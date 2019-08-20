@@ -20,7 +20,7 @@ Contains common params for all connection types
   Specifies method assign session id.
   
   * ``urandom`` - assign session id by random method
-  * ``seq Assign`` - assign session id by sequence method
+  * ``seq`` - assign session id by sequence method
 
 **seq-file=path**
   By default is ``seq-file=var/lib/accel-ppp/seq``
