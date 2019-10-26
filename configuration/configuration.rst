@@ -34,6 +34,9 @@ Configuration file consists of sections in form:
     sstp.rst
     dns.rst
     ipv6-dns.rst
+    ipv6-pool.rst
+    ipv6-nd.rst
+    ipv6-dhcp.rst
     shaper.rst
     log.rst
     cli.rst
