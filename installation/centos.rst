@@ -19,7 +19,7 @@ Before compile and build package need satisfy some dependencies
 
 .. code-block:: sh
 
-  yum -y install rpm-build cmake gcc git pcre-devel openssl-devel lua-devel
+  yum -y install rpm-build make cmake gcc git pcre-devel openssl-devel lua-devel
 
 After install dependencies, download accel-ppp source code with git client, tree master . Master tree contain actual patches last release. 
 
