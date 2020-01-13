@@ -23,7 +23,7 @@ Contains common params for all connection types
   * ``seq`` - assign session id by sequence method
 
 **seq-file=path**
-  By default is ``seq-file=var/lib/accel-ppp/seq``
+  By default is ``seq-file=/var/lib/accel-ppp/seq``
   Path to file for sessions sequence number. Start sequence number may be set there (default /var/lib/accel-ppp/seq).
 
 **max-sessions=n**
