@@ -23,10 +23,11 @@ Configuration of PPPoE module.
 
   ``Need fix: ìmportant check it`` Specifies AC-Name tag value. If absent tag will not be sent.
 
-**service-name=service-name**
+**service-name=service-name1,service-nameN**
   By default is not defined.
 
   Specifies Service-Name to respond. If absent any Service-Name is acceptable and client's Service-Name will be sent back.
+  Also possible set multiple service-names: ``service-name=sn1,sn2,sn3``
 
 **accept-any-service=n**
   By default is disabled.
