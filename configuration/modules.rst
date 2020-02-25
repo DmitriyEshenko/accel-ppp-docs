@@ -1,7 +1,11 @@
 [modules]
 =========
 
-Section [modules] containes list of modules to load
+Section [modules] containes list of modules to load.
+
+.. admonition:: Note:
+
+   There exist order which define modules priority e.g. If **ippool** module will defined before **radius**, then ip-addresses always will assigned from **[ip-pool]**, and Framed-IP-Adresse recived from radius server will be ignored. 
 
 * **log_file** - logging target which logs messages to files. It support per-session/per-user features.
 * **log_syslog** - logging target which logs messages to syslog.
